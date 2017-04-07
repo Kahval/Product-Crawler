@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]--> <!--[if IE 8]> <html class="no-js lt-ie9"> <!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="//schema.org/WebPage" xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]--> <!--[if lt IE 9]> <script>if (typeof console == "undefined") {this.console = { log: function (msg) {  } };}</script> <script src="/Assets/js/dist/html5shiv.js?636185306050541563"></script> <![endif]--> <head> <script src="//tags.tiqcdn.com/utag/teknosa/te/prod/utag.sync.js"></script> <script src="//cdn.optimizely.com/js/1785200690.js"></script> <title>
+AKILLI TELEFON - Teknosa.com
+</title><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta property="ct:page" content="category" /><meta property="ct:language" content="tr" /> <script>window['adrum-app-key'] = 'AD-AAB-AAC-TFD'; window['adrum-start-time'] = new Date().getTime();</script> <script src="/Scripts/adrum.js?636232883400000000"></script> <link type="text/css" rel="stylesheet" href="/Content/teknosa/font-awesome/css/font-awesome.min.css?636185306069028601" /> <link type="text/css" rel="stylesheet" href="/Assets/css/core.min.css?636185306042084207" /> <link type="text/css" rel="stylesheet" href="/Assets/css/clickcollect.css?636185306041644737" /> <link type="text/css" rel="stylesheet" href="/Assets/css/skins/minimal/minimal.css?636185306042367421" /> <link type="text/css" rel="stylesheet" href="/Assets/css/ui-lightness/jquery-ui-1.10.3.custom.min.css?636185306042972913" /> <link type="text/css" rel="stylesheet" href="/Content/teknosa/Scroll/jquery.mCustomScrollbar.css?636185306072261147" /> <link type="text/css" rel="stylesheet" href="/Content/teknosa/css/PartialHead.css?636185306068550067" /> <link type="text/css" rel="stylesheet" href="/Content/teknosa/css/header.css?636185306068481705" /> <link type="text/css" rel="stylesheet" href="/Content/teknosa/css/footer.css?636185306068442641" /> <link type="text/css" rel="stylesheet" href="/Content/teknosa/menu/main-menu.css?636226753420000000" /> <link type="text/css" rel="stylesheet" href="/Plugins/Modules.Menu/Content/css/menu.css?635779333454000582" /> <link href="/Assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> <script>
+var ScarabQueue = ScarabQueue || [];
+(function (subdomain, id) {
+if (document.getElementById(id)) return;
+var js = document.createElement('script'); js.id = id;
+js.src = subdomain + '.scarabresearch.com/js/152E42188B74EA98/scarab-v2.js';
+var fs = document.getElementsByTagName('script')[0];
+fs.parentNode.insertBefore(js, fs);
+})('https:' == document.location.protocol ? 'https://recommender' : 'http://cdn', 'scarab-js-api');
+</script> <script type="text/javascript" src="/Assets/js/modernizr-2.6.2.min.js?636185306051381439"></script> <script type="text/javascript" src="/Assets/js/jquery-1.10.1.min.js?636185306050932203"></script> <script type="text/javascript" src="/Assets/js/jquery-migrate-1.2.1.min.js?636185306050951735"></script> <script type="text/javascript" src="/Assets/js/jquery-ui-1.10.3.custom.min.js?636185306051000565"></script> <script type="text/javascript" src="/Assets/js/jquery.cookie.js?636185306051010331"></script> <script type="text/javascript" src="/Assets/js/jquery.teknosa.core.js?636185306051254481"></script> <script type="text/javascript" src="/Assets/js/modules.js?636202564097143608"></script> <script type="text/javascript" src="/Assets/js/bootstrap.min.js?636185306050502499"></script> <script type="text/javascript" src="/Assets/js/selectbox.js?636185306051498631"></script> <script type="text/javascript" src="/Assets/js/jquery.easing-1.3.js?636185306051049395"></script> <script type="text/javascript" src="/Assets/js/jquery.menu-aim.js?636185306051098225"></script> <script type="text/javascript" src="/Assets/js/jquery.fancybox.pack.js?636185306051059161"></script> <script type="text/javascript" src="/Assets/js/jquery.icheck.min.js?636185306051078693"></script> <script type="text/javascript" src="/Assets/js/jquery.validate.min.js?636185306051293545"></script> <script type="text/javascript" src="/Assets/js/jquery.tmpl.min.js?636185306051264247"></script> <script type="text/javascript" src="/Assets/js/site.js?636185306051557227"></script> <script type="text/javascript" src="/Assets/js/fancybox/jquery.mousewheel-3.0.6.pack.js?636185306050824777"></script> <script type="text/javascript" src="/Scripts/globalize/globalize.js?636185306076255441"></script> <script type="text/javascript" src="/Scripts/globalize/cultures/globalize.culture.tr.js?636185306076235909"></script> <script type="text/javascript" src="/Scripts/Scroll/jquery.mCustomScrollbar.min.js?636185306077720341"></script> <script type="text/javascript" src="/Scripts/Lazyload/jquery.lazyload.min.js?636185306077378531"></script> <script type="text/javascript" src="/Scripts/jquery-teknosa.js?636185306076519123"></script> <script type="text/javascript" src="/Scripts/Tealium/jquery-teknosa-tealium.js?636185306077759405"></script> <script type="text/javascript" src="/Scripts/Google_Gtm/jquery-teknosa-google-premimum.js?636185306076274973"></script> <script type="text/javascript" src="/Scripts/Menus/menu.js?636185306077466425"></script> <meta property="og:url" content="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722" /> <meta property="og:title" content="AKILLI TELEFON" /> <meta property="og:description" content="AKILLI TELEFON" /> <meta property="og:image" content="http://img-teknosa.mncdn.com/TeknosaImg/categories/_CEP_BILGISAYARI__PDA_722.jpg" /> <meta name="description" content="Türkiye&#8217;nin&#32;teknoloji&#32;lideri&#32;Teknosa!&#32;Güncel&#32;kampanyalar&#32;ve&#32;ürünler&#32;hakkında&#32;detaylı&#32;bilgi&#32;edinebilir,&#32;aradığınız&#32;ürünü&#32;uygun&#32;fiyata&#32;satın&#32;alabilirsiniz!" /></head> <body id="MasterPageBody" data-module="listing"> <!-- Google Tag Manager --> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TTVPMD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>
+dataLayer = [{"userTmvID":"","userEmail":"","userID":"","PageType":"category","pvalue":"","pcat":"","pname":"","prodid":"","ecommerce":{"currencyCode":"TRY","impressions":[{"name":"APPLE IPHONE 5S 16GB SPACE GRAY AKILLI TELEFON","id":"125071132","price":"1489","brand":"APPLE","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":1},{"name":"APPLE IPHONE 5S 16GB SILVER AKILLI TELEFON","id":"125071133","price":"1489","brand":"APPLE","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":2},{"name":"SAMSUNG GALAXY J2 SIYAH AKILLI TELEFON","id":"125071621","price":"799","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":3},{"name":"SAMSUNG N920 GALAXY NOTE 5 ALTIN AKILLI TELEFON","id":"125071589","price":"2699","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":4},{"name":"SAMSUNG N920 GALAXY NOTE 5 SIYAH AKILLI TELEFON","id":"125071590","price":"2699","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":5},{"name":"APPLE iPhone 6S Plus 16GB SPACE GRAY AKILLI TELEFON","id":"125071627","price":"3299","brand":"APPLE","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":6},{"name":"APPLE iPhone 6S Plus 16GB SILVER AKILLI TELEFON","id":"125071628","price":"3299","brand":"APPLE","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":7},{"name":"SAMSUNG N920 GALAXY NOTE 5 32 GB SILVER AKILLI TELEFON","id":"125071661","price":"2699","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":8},{"name":"Vestel Venus V3 5570 TEKNO GRi","id":"125071672","price":"997","brand":"VESTEL","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":9},{"name":"Vestel Venus V3 5570 iNCi BEYAZI","id":"125071673","price":"997","brand":"VESTEL","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":10},{"name":"APPLE iPhone 6S Plus 16GB ROSE GOLD AKILLI TELEFON","id":"125071630","price":"3299","brand":"APPLE","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":11},{"name":"HTC DESIRE 728G DUAL SIM BEYAZ AKILLI TELEFON","id":"125071687","price":"797","brand":"HTC","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":12},{"name":"SAMSUNG GALAXY A310F A3 2016 GOLD AKILLI TELEFON","id":"125071703","price":"1099","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":13},{"name":"SAMSUNG GALAXY A310F A3 2016 BLACK AKILLI TELEFON","id":"125071704","price":"1099","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":14},{"name":"SAMSUNG GALAXY A310F A3 2016 WHITE AKILLI TELEFON","id":"125071705","price":"1099","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":15},{"name":"LG H960  V10 32 GB  BEYAZ AKILLI TELEFON","id":"125071715","price":"1999","brand":"LG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":16},{"name":"CASPER VIA M1 32 GB BEYAZ AKILLI TELEFON","id":"125071718","price":"999","brand":"CASPER","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":17},{"name":"CASPER VIA M1 32 GB SiYAH AKILLI TELEFON","id":"125071735","price":"999","brand":"CASPER","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":18},{"name":"SAMSUNG GALAXY S7 G930F GOLD AKILLI TELEFON","id":"125071736","price":"2999","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":19},{"name":"SAMSUNG GALAXY S7 G930F BLACK AKILLI TELEFON","id":"125071737","price":"2999","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":20},{"name":"SAMSUNG GALAXY S7  G930F SILVER AKILLI TELEFON","id":"125071738","price":"2999","brand":"SAMSUNG","category":"_CEP_BILGISAYARI__PDA_722","list":"CategoryResult","position":21}]},"popProducts":["125071132","125071133","125071621"],"vCategory":"","EmarsysCategories":"TELEKOM > AKILLI TELEFON","breadCrumb":["TELEKOM","AKILLI TELEFON"]}];
+(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TTVPMD');
+</script> <!-- End Google Tag Manager --> <script type="text/javascript">
+var utag_data = {"pv_top_three_products":["125071132","125071133","125071621"],"page_subcategory_name":"_CEP_BILGISAYARI__PDA_722","page_id":"DESK:ProductListing - AKILLI TELEFON","logged_in":"N","affiliate_source":"","page_type":"SearchResult","search_sort":"EN POPÜLER","search_facet_filter":"","pv_user_platform":"d"};
+(function (a, b, c, d) {
+a = '//tags.tiqcdn.com/utag/teknosa/te/prod/utag.js';
+b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
+a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
+})();
+</script> <div class="layout"> <div class="header-top"> <div class="container"> <div class="left logo"> <a href="/"> <img src="/Content/teknosa/images/logo.png" alt="Teknosa" /> </a> </div> <div class="left head-menu"> <div class="module-item module-menu "> <div class="module-body module-menu-body"> <ul> <li class="menu-items-level-1 company"> <a href="/kampanyalar" class="menu-item" title="Kampanyalar" > <span class="name">Kampanyalar</span> </a> </li> <li class="menu-items-level-1"> <a href="http://magazalar.teknosa.com" class="menu-item" title="Mağazalar" > <span class="name">Mağazalar</span> </a> </li> <li class="menu-items-level-1 image teknosa-mobile"> <a href="http://www.teknosacell.com/" class="menu-item" title="TeknosaCell" target="_blank"> <span class="name">TeknosaCell</span> <img src="//img-teknosa.mncdn.com/StaticContent/files/tekno_cell_logo.png" alt="TeknosaCell" /> </a> </li> <li class="menu-items-level-1 image preo"> <a href="/pages/teknosa-preo" class="menu-item" title="Preo" > <span class="name">Preo</span> <img src="//img-teknosa.mncdn.com/StaticContent/files/preo_navi_yeni(3).jpg" alt="Preo" /> </a> </li> </ul> </div> </div> </div> <div class="clear"></div> </div> </div> <div class="header-bottom"> <div class="container"> <div class="menu-container"> <ul> <li class="menu-items-level-1 all-products"> <a href="#" class="menu-item" > <span>
+TÜM ÜRÜNLER
+</span> <i class="fa fa-caret-down"></i> </a> <div class="menu-items-container"> <div class="menu-items-level-2"> <ul> <li> <a href="/katalog/ses-ve-goruntu" >TV & Ses ve Görüntü<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/ses-ve-goruntu/lcd-plazma-televizyon/852" >
+Televizyonlar
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/ev-sinema-sistemleri/93" >
+Ev Sinema Sistemi
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/projektor/883" >
+Projeksiyon
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/tv-sehpasi/1646" >
+TV Sehpası
+</a> </li> <li> <a href="/katalog/mp3" >
+Mp3 Player
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/kablolar/891" >
+Kablolar
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/tasinabilir-hoparlor/1663" >
+Bluetooth Hoparlörler
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/kulaklik-mikrofon/890" >
+Kulaklık
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/uydu-sistemleri/818" >
+Uydu Alıcılar
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/tv-askisi/1402#" >
+Tv Askı Aparatları
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/led-ekran/1667" >
+LED Ekran
+</a> </li> <li> <a href="/katalog/ses-ve-goruntu" >
+TÜM TV ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/lcd-plazma-televizyon/852" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/110015754-1.jpg" alt="Televizyon" /></div>
+Televizyonlar
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/ev-sinema-sistemleri/93" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/2.jpg" alt="Ev Sinema Sistemi" /></div>
+Ev Sinema Sistemi
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/projektor/883" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/3.jpg" alt="Projeksiyon" /></div>
+Projeksiyon
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/kulaklik-mikrofon/890" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2016/widget/kulaklik.jpg" alt="Kulaklıklar" /></div>
+Kulaklıklar
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/tasinabilir-hoparlor/1663" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2016/widget/bluetooth-hoparl%C3%B6r.jpg" alt="Bluetooth Hoparlörler" /></div>
+Bluetooth Hoparlörler
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/tv-sehpasi/1646" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/15.jpg" alt="Tv Aksesuarları" /></div>
+TV Sehpaları
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/katalog/telekom" >Telefon<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/telekom/cep-bilgisayari-pda/722" >
+Akıllı Telefon
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/tasinabilir-hoparlor/1663" >
+Bluetooth Hoparlör
+</a> </li> <li> <a href="/kategori/telekom/aksesuar/1518" >
+Telefon Aksesuarları
+</a> </li> <li> <a href="/kategori/telekom/giyilecek-aksesuar/1604" >
+Giyilebilir Aksesuar
+</a> </li> <li> <a href="/kategori/telekom/hafiza-karti/1522" >
+Hafıza Kartı
+</a> </li> <li> <a href="/kategori/telekom/kiliflar/1635" >
+Telefon Kılıfları
+</a> </li> <li> <a href="/kategori/telekom/tasinabilir-sarj-cihazlari/1629" >
+Taşınabilir Şarj Cihazları
+</a> </li> <li> <a href="/kategori/telekom/kablosuz-telefon/1521" >
+Dect Telefon
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/kulaklik-mikrofon/890" >
+Kulaklık
+</a> </li> <li> <a href="/kategori/telekom/kablosuz-telefon/1521" >
+Ev & Ofis Telefonları & Faks
+</a> </li> <li> <a href="/katalog/telekom" >
+TÜM TELEFON ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/telekom/cep-bilgisayari-pda/722" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2017/samsung.jpg" alt="Akıllı Telefon" /></div>
+Akıllı Telefon
+</a> </li> <li class="image-link"> <a href="/kategori/telekom/bluetooth-kulakliklar/1636" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/bluetooth_kulaklik.jpg" alt="Bluetooth Kulaklık" /></div>
+Bluetooth Kulaklık
+</a> </li> <li class="image-link"> <a href="/kategori/telekom/tasinabilir-sarj-cihazlari/1629" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2016/widget/tasinabilir-sarj-2.jpg" alt="Taşınabilir Şarj Cihazları" /></div>
+Taşınabilir Şarj Cihazları
+</a> </li> <li class="image-link"> <a href="/kategori/telekom/giyilecek-aksesuar/1604" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/ak%C4%B1ll%C4%B1saat_aksesuar.jpg" alt="Giyilebilir Aksesuar" /></div>
+Giyilebilir Aksesuar
+</a> </li> <li class="image-link"> <a href="/kategori/telekom/navigasyon-cihazi/966" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/145130201-1-tomtom_via_135_5_navigasyon_cihazi.jpg" alt="Navigasyon cihazları" /></div>
+Navigasyon Cihazları
+</a> </li> <li class="image-link"> <a href="/kategori/telekom/kiliflar/1635" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2015/anasayfa-modul/kilif.jpg" alt="Telefon Kılıfları" /></div>
+Telefon Kılıfları
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/katalog/bilgisayar" >Bilgisayar & Tablet<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/bilgisayar/notebook/63" >
+Dizüstü Bilgisayar
+</a> </li> <li> <a href="/kategori/bilgisayar/tablet-pc/739" >
+Tablet
+</a> </li> <li> <a href="/kategori/bilgisayar/desktop-pc/56" >
+Masaüstü Bilgisayar
+</a> </li> <li> <a href="/kategori/bilgisayar/notebook/63?q=[bilgisayar-tipi:2si-1-arada,]" >
+2'si 1 Arada Laptop
+</a> </li> <li> <a href="/kategori/bilgisayar/monitor/838" >
+Monitör
+</a> </li> <li> <a href="http://www.teknosa.com/kategori/bilgisayar/notebook/63?q=[bilgisayar-tipi:oyun-bilgisayari,]" >
+Oyun Bilgisayarları
+</a> </li> <li> <a href="/kategori/bilgisayar/yazicilar-ve-tarayicilar/831" >
+Yazıcı & Tarayıcı
+</a> </li> <li> <a href="/kategori/bilgisayar/veri-depolama/1468" >
+Veri Depolama
+</a> </li> <li> <a href="/kategori/bilgisayar/tablet-pc-aksesuari/1585" >
+Tablet Aksesuarları
+</a> </li> <li> <a href="/kategori/bilgisayar/toner-ve-kartus/840" >
+Toner & Kartuş
+</a> </li> <li> <a href="/kategori/bilgisayar/yazilim/82" >
+Yazılım
+</a> </li> <li> <a href="/katalog/bilgisayar" >
+TÜM BİLGİSAYAR ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/bilgisayar/notebook/63" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/2016/210916/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" alt="Dizüstü Bilgisayar" /></div>
+Dizüstü Bilgisayar
+</a> </li> <li class="image-link"> <a href="/kategori/bilgisayar/tablet-pc/739" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/17.jpg" alt="Tablet" /></div>
+Tablet
+</a> </li> <li class="image-link"> <a href="/kategori/bilgisayar/desktop-pc/56" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/25.jpg" alt="Masaüstü Bilgisayar" /></div>
+Masaüstü Bilgisayar
+</a> </li> <li class="image-link"> <a href="/kategori/bilgisayar/notebook/63?q=[bilgisayar-tipi:2si-1-arada,]" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/2016/210916/Ba%C5%9Fl%C4%B1ks%C4%B1z-2.jpg" alt="2si1aradacihazlar" /></div>
+2'si 1 Arada Laptop
+</a> </li> <li class="image-link"> <a href="/kategori/bilgisayar/yazicilar-ve-tarayicilar/831" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/2016/nisan/20042016/gorsel2.jpg" alt="Yazıcı & Tarayıcı" /></div>
+Yazıcı & Tarayıcı
+</a> </li> <li class="image-link"> <a href="/kategori/bilgisayar/bilgisayar-cevre-birimleri-ve-parcalari/653" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/7ea773e7-beaf-46c1-b138-44c1c0.jpg" alt="Bilgisayar Aksesuarları" /></div>
+Bilgisayar Aksesuarları
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/katalog/beyaz-esya" >Beyaz Eşya ve Ankastre<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/beyaz-esya/buzdolabi/1476" >
+Buzdolabı
+</a> </li> <li> <a href="/kategori/beyaz-esya/camasir-makinesi/1049" >
+Çamaşır Makinesi
+</a> </li> <li> <a href="/kategori/beyaz-esya/bulasik-makinesi/1051" >
+Bulaşık Makinesi
+</a> </li> <li> <a href="/kategori/beyaz-esya/klima/992" >
+Klima
+</a> </li> <li> <a href="/kategori/beyaz-esya/ankastre-urunler/1617" >
+Ankastre Ürünler
+</a> </li> <li> <a href="/kategori/beyaz-esya/mini-mikrodalga-firin/1486" >
+Mini & Mikrodalga Fırın
+</a> </li> <li> <a href="/kategori/beyaz-esya/ocak/1483" >
+Ocak
+</a> </li> <li> <a href="/kategori/beyaz-esya/termosifon/1704" >
+Termosifon
+</a> </li> <li> <a href="/kategori/beyaz-esya/derin-dondurucu/1475" >
+Derin Dondurucu
+</a> </li> <li> <a href="/katalog/beyaz-esya" >
+TÜM BEYAZ EŞYALAR
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/beyaz-esya/buzdolabi/1476" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/20.jpg" alt="Buzdolabı" /></div>
+Buzdolabı
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/derin-dondurucu/1475" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/62.jpg" alt="Derin Dondurucu" /></div>
+Derin Dondurucu
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/bulasik-makinesi/1051" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/56.jpg" alt="Bulaşık Makinesi" /></div>
+Bulaşık Makinesi
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/camasir-makinesi/1049" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/55.jpg" alt="Çamaşır Makinesi" /></div>
+Çamaşır & Kurutma Makinesi
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/ankastre-urunler/1617" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/59.jpg" alt="Ankastre ürünler" /></div>
+Ankastre Ürünler
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/mikrodalga-firin/1488" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/115050068.jpg" alt="Mikrodalga Fırın" /></div>
+Mikrodalga Fırın
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/kategori/beyaz-esya/kucuk-ev-aletleri/1330" >Elektrikli Ev Aletleri<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/beyaz-esya/elektrikli-supurge/1504" >
+Elektrikli Süpürge
+</a> </li> <li> <a href="/kategori/beyaz-esya/utu/1331" >
+Ütü
+</a> </li> <li> <a href="/kategori/beyaz-esya/sarjli-supurge/1506" >
+Şarjlı Süpürge
+</a> </li> <li> <a href="/kategori/beyaz-esya/kati-meyve-sikacagi/1510" >
+Katı Meyve Sıkacağı
+</a> </li> <li> <a href="/kategori/beyaz-esya/su-isitici/1492" >
+Su Isıtıcıları / Kettle
+</a> </li> <li> <a href="/kategori/beyaz-esya/blender/1490" >
+Blender
+</a> </li> <li> <a href="/kategori/beyaz-esya/mikser/1491" >
+Mikser
+</a> </li> <li> <a href="/kategori/beyaz-esya/isitici/1500" >
+Isıtıcı
+</a> </li> <li> <a href="/kategori/beyaz-esya/tost-makinesi/1502" >
+Tost Makinesi
+</a> </li> <li> <a href="/kategori/beyaz-esya/kahve-makinesi/1642" >
+Kahve Makinesi
+</a> </li> <li> <a href="/kategori/beyaz-esya/kucuk-ev-aletleri/1330" >
+TÜM ELEKTRİKLİ EV ALETLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/beyaz-esya/elektrikli-supurge/1504" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/115040816-1-grundig-vcc-7670-a.jpg" alt="Süpürgeler" /></div>
+Elektrikli Süpürge
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/utu/1331" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/1411/ocak/philips-gc488530-azur-pro-utu.jpg" alt="Ütü" /></div>
+Ütü
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/tost-makinesi/1502" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/tefal-versatilis-2-izgara-ve-tost-makinesi.jpg" alt="Tost Makinesi" /></div>
+Tost Makinesi
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/kati-meyve-sikacagi/1510" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/1411/ocak/kenwood-je680-kati-meyve-sikacagi_2.jpg" alt="Katı Meyve Sıkacağı" /></div>
+Katı Meyve Sıkacağı
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/isitici/1500" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/1411/ocak/kumtel-th-1800-karbon-isitici.jpg" alt="Isıtıcı" /></div>
+Isıtıcı
+</a> </li> <li class="image-link"> <a href="/kategori/beyaz-esya/cay-kahve-makinesi/1499" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/1411/ocak/arzum-ar3004-cayci-klasik-cay-robotu.jpg" alt="Çay Makinesi" /></div>
+Çay Makinesi
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/katalog/oyun-hobi" >Oyun & Hobi<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2 style3"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/oyun-hobi/playstation/41603" >
+PS4
+</a> </li> <li> <a href="/kategori/oyun-hobi/xbox-one/1638" >
+Xbox One
+</a> </li> <li> <a href="/kategori/oyun-hobi/xbox/1419" >
+Xbox 360
+</a> </li> <li> <a href="/kategori/oyun-hobi/xbox/1426" >
+Xbox Oyunları
+</a> </li> <li> <a href="/kategori/oyun-hobi/playstation/41602" >
+PS4 Oyunları
+</a> </li> <li> <a href="/kategori/oyun-hobi/playstation/31414" >
+PS3
+</a> </li> <li> <a href="/kategori/oyun-hobi/oyuncaklar/332?order=4" >
+Oyuncak
+</a> </li> <li> <a href="/kategori/oyun-hobi/oyuncu-mouse/1571" >
+Oyuncu Mouse
+</a> </li> <li> <a href="/kategori/oyun-hobi/direksiyon/1386" >
+Direksiyon & Joystick
+</a> </li> <li> <a href="/katalog/oyun-hobi" >
+TÜM ÜRÜNLER
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/oyun-hobi/oyun-konsollari/1413" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/70.jpg" alt="Oyun Konsolları" /></div>
+Oyun Konsolları
+</a> </li> <li class="image-link"> <a href="/kategori/oyun-hobi/konsol-aksesuar/1383" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/ps4_dual_shock.jpg" alt="Oyun Konsolu Aksesuarları" /></div>
+Oyun Aksesuarları
+</a> </li> <li class="image-link"> <a href="/kategori/oyun-hobi/oyun-yazilim/1420" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/StaticContent/images/2016/EYLUL/200916/fifa.jpg" alt="Oyunlar" /></div>
+Oyunlar
+</a> </li> <li class="image-link"> <a href="/kategori/oyun-hobi/oyuncaklar/332?order=4" > <div><img class="lazy" data-original="http://img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/76.jpg" alt="Oyuncak" /></div>
+Akıllı Oyuncak
+</a> </li> <li class="image-link"> <a href="/kategori/oyun-hobi/org/1382" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/73.jpg" alt="Müzik" /></div>
+Müzik Enstrümanları
+</a> </li> <li class="clear"></li> </ul> </div> <div class="left sponsors" data="142"> <div sponsorkey="MarkaIletisim-_-Oyun &amp; Hobi-_-XBOX ONE S" sponsor-name='XBOX ONE S' sponsor-img='//img-teknosa.mncdn.com/StaticContent/images/2017/sponsorluk_xbox.jpg' sponsor-id='0_XBOX ONE S' position="Oyun &amp; Hobi_XBOX ONE S" sponsor-menu="Oyun _ Hobi"> <a href="http://www.teknosa.com/urunler/125089028/xbox-one-s-500-gb-minecraft-favourite-pack-forza-6" onclick="$.Teknosa.OnClickEvent({ type: 'AnaMenuSponsor', href: 'http://www.teknosa.com/urunler/125089028/xbox-one-s-500-gb-minecraft-favourite-pack-forza-6', name: 'XBOX ONE S', groupName: 'MarkaIletisim-_-Oyun &amp; Hobi-_-XBOX ONE S' });$.Teknosa.OnPromoClick({name:'XBOX ONE S',id:'0_XBOX ONE S',position:'Oyun _ Hobi_Sponsorluk',creative:'//img-teknosa.mncdn.com/StaticContent/images/2017/sponsorluk_xbox.jpg',location:'http://www.teknosa.com/urunler/125089028/xbox-one-s-500-gb-minecraft-favourite-pack-forza-6'});"> <img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2017/sponsorluk_xbox.jpg" /> </a> </div> <script type="text/javascript"> </script> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/katalog/kisisel-bakim" >Kişisel Bakım<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/kisisel-bakim/tras-makinesi/1441" >
+Tıraş Makineleri
+</a> </li> <li> <a href="/kategori/kisisel-bakim/epilator/935" >
+Epilatör
+</a> </li> <li> <a href="/kategori/kisisel-bakim/epilator/935?q=[lazer-epilasyon:var,]" >
+IPL-Lazer Epilasyon
+</a> </li> <li> <a href="/kategori/kisisel-bakim/sac-sekillendiriciler/1345" >
+Saç Şekillendiriciler
+</a> </li> <li> <a href="/kategori/kisisel-bakim/sac-kurutma-makineleri/1343" >
+Saç Kurutma Makineleri
+</a> </li> <li> <a href="/kategori/kisisel-bakim/saglik-urunleri/1433" >
+Sağlık Ürünleri
+</a> </li> <li> <a href="/kategori/kisisel-bakim/sac-sakal-kesme-makinalari/1442" >
+Saç Sakal Kesme Makinesi
+</a> </li> <li> <a href="/kategori/kisisel-bakim/dis-bakimi/1437" >
+Ağız & Diş Bakımı
+</a> </li> <li> <a href="/katalog/kisisel-bakim" >
+TÜM BAKIM ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/kisisel-bakim/erkek-bakim-ekipmanlari/1440" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/196x167.jpg" alt="Erkek Bakım" /></div>
+Erkek Bakım
+</a> </li> <li class="image-link"> <a href="/kategori/kisisel-bakim/epilator/935" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/83.jpg" alt="Kadın Bakım Ürünleri" /></div>
+Kadın Bakım
+</a> </li> <li class="image-link"> <a href="/kategori/kisisel-bakim/sac-bakimi/932" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/120203337-1-grundig-hd-6480-io.jpg" alt="Saç Bakım" /></div>
+Saç Bakımı
+</a> </li> <li class="image-link"> <a href="/kategori/kisisel-bakim/epilator/935?q=[lazer-epilasyon:var,]" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/196x167_braun.jpg" alt="Bebek Bakımı" /></div>
+Lazer Epilasyon
+</a> </li> <li class="image-link"> <a href="/kategori/kisisel-bakim/dis-bakimi/1437" > <div><img class="lazy" data-original="http://img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/81.jpg" alt="Ağız ve Diş Bakım" /></div>
+Ağız & Diş Bakımı
+</a> </li> <li class="image-link"> <a href="/kategori/kisisel-bakim/saglik-urunleri/1433" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2015/KASIM/27112015/bask%C3%BCl.png" alt="Sağlık Ürünleri" /></div>
+Sağlık Ürünleri
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="http://www.teknosa.com/katalog/spor" >Spor<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/spor/kondisyon-aletleri/970" >
+Koşu Bantları
+</a> </li> <li> <a href="/kategori/spor/kondisyon-bisikletleri/1679" >
+Kondisyon Bisikletleri 
+</a> </li> <li> <a href="/kategori/spor/agirlik-sehpasi/1681" >
+Ağırlık Sehpası
+</a> </li> <li> <a href="/kategori/spor/sezonluk-urunler/1689" >
+Sezonluk Ürünler
+</a> </li> <li> <a href="/kategori/spor/spor-branslari/1673" >
+Spor Branşları
+</a> </li> <li> <a href="/kategori/spor/kaykay/1675" >
+Kaykay
+</a> </li> <li> <a href="/kategori/spor/scooter/1674" >
+Scooter
+</a> </li> <li> <a href="http://www.teknosa.com/katalog/spor" >
+TÜM SPOR ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/spor/kondisyon-aletleri/970" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/ko%C5%9Fu-band%C4%B1.jpg" alt="Koşu Bantları" /></div>
+Koşu Bantları
+</a> </li> <li class="image-link"> <a href="/kategori/spor/kondisyon-bisikletleri/1679" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/120310065-1-altis-sp8000-elipt.jpg" alt="Kondisyon Bisikletleri" /></div>
+Kondisyon Bisikletleri
+</a> </li> <li class="image-link"> <a href="/kategori/spor/agirlik-sehpasi/1681" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/120090047-1-voit-t600-agirlik-.jpg" alt="Ağırlık Sehpası" /></div>
+Ağırlık Sehpası
+</a> </li> <li class="image-link"> <a href="/kategori/spor/sezonluk-urunler/1689" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/135120718-1-intex-explorer-bot.jpg" alt="Sezonluk Ürünler" /></div>
+Sezonluk Ürünler
+</a> </li> <li class="image-link"> <a href="/kategori/spor/spor-branslari/1673" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/120090215-1-voit-predator-inli.jpg" alt="Spor Branşları" /></div>
+Spor Branşları
+</a> </li> <li class="image-link "> <a href="/kategori/spor/dumbell/1680" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/120090187-1-voit-kaucuk-kapli-.jpg" alt="Dambıl" /></div>
+Dambıl
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/katalog/fotograf-video-kamera?order=4 " >Foto & Kamera<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/fotograf-video-kamera/dijital-slr-fotograf-makinesi/1576" >
+DSLR Fotoğraf Makineleri
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/dijital-fotograf-makinesi/873" >
+Kompakt Fotoğraf Makinesi
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/dijital-video-kamera/1000" >
+Video Kamera
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/hafiza-karti/868" >
+Hafıza Kartı
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/canta-ve-tripod/1577" >
+Çanta & Tripod
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/objektifler/1301" >
+Objektifler
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/durbun/1579" >
+Dürbünler
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/filtre/1308" >
+Filtreler
+</a> </li> <li> <a href="/kategori/fotograf-video-kamera/dijital-cerceve-ve-fotograf-cercevesi/870" >
+Dijital Fotoğraf Çerçeveleri
+</a> </li> <li> <a href="/katalog/fotograf-video-kamera" >
+TÜM KAMERA ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/fotograf-video-kamera/dijital-slr-fotograf-makinesi/1576" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/45.jpg" alt="SLR Fotoğraf Makinesi" /></div>
+DSLR Fotoğraf Makineleri
+</a> </li> <li class="image-link"> <a href="/kategori/fotograf-video-kamera/dijital-fotograf-makinesi/873" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/44.jpg" alt="Kompakt fotoğraf makinesi" /></div>
+Kompakt Fotoğraf Makinesi
+</a> </li> <li class="image-link"> <a href="/kategori/fotograf-video-kamera/dijital-video-kamera/1000" > <div><img class="lazy" data-original="http://img-teknosa.mncdn.com/TeknosaImg/productImages/455x348/110141017-1-sony_hdr_pj_820_dijital_kamera.jpg" alt="Video kamera" /></div>
+Video Kamera
+</a> </li> <li class="image-link"> <a href="/katalog/fotograf-video-kamera/aksiyon-kamera-aksesuarlari/1652?order=4" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/46.jpg" alt="Aksiyon Kamera & Aksesuarı" /></div>
+Aksiyon Kamera & Aksesuarı
+</a> </li> <li class="image-link"> <a href="/kategori/fotograf-video-kamera/aksesuar/1298" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/50.jpg" alt="Foto aksesuar" /></div>
+Foto Aksesuar ve Gereçleri
+</a> </li> <li class="image-link"> <a href="/kategori/fotograf-video-kamera/hafiza-karti/868" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/47.jpg" alt="Hafıza Kartı" /></div>
+Hafıza Kartı
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/arama?s=aksesuar" >Aksesuarlar<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/telekom/aksesuar/1518" >
+Telefon Aksesuarları
+</a> </li> <li> <a href="/kategori/bilgisayar/bilgisayar-cevre-birimleri-ve-parcalari/653" >
+Bilgisayar Aksesuarları
+</a> </li> <li> <a href="/kategori/bilgisayar/tablet-pc-aksesuari/1585" >
+Tablet Aksesuarları
+</a> </li> <li> <a href="/kategori/telekom/giyilecek-aksesuar/1604" >
+Giyilebilir Aksesuar
+</a> </li> <li> <a href="/katalog/pil" >
+Pil & Şarj Aletleri
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/kablolar/891" >
+Kablolar ve Adaptörler
+</a> </li> <li> <a href="/kategori/beyaz-esya/aydinlatma-dekoratif/1494" >
+Aydınlatma
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/kategori/telekom/aksesuar/1518" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/39.jpg" alt="Telefon Aksesuarları" /></div>
+Telefon Aksesuarları
+</a> </li> <li class="image-link"> <a href="/kategori/bilgisayar/bilgisayar-cevre-birimleri-ve-parcalari/653" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/8.jpg" alt="Bilgisayar Aksesuarları" /></div>
+Bilgisayar Aksesuarları
+</a> </li> <li class="image-link"> <a href="/kategori/telekom/giyilecek-aksesuar/1604" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/images/2015/TEMMUZ/15TemmuzTuruncu/teknosa_preo_pwatch.jpg" alt="Giyilebilir Aksesuar" /></div>
+Giyilebilir Aksesuar
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/tv-sehpasi/1646" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/15.jpg" alt="TV Sehpası" /></div>
+TV Aksesuarları
+</a> </li> <li class="image-link"> <a href="/kategori/ses-ve-goruntu/kablolar/891" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/9.jpg" alt="Kablo ve adaptör" /></div>
+Kablolar ve Adaptörler
+</a> </li> <li class="image-link"> <a href="/katalog/pil" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/kategoriler/85.jpg" alt="Pil & Şarj Aletleri" /></div>
+Pil & Şarj Aletleri
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="/kategori/ses-ve-goruntu/kurulum-paketi/1365" >Dr.Teknolog <i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/teknogaranti" >
+Ek Garanti Hizmeti
+</a> </li> <li> <a href="/arama?s=teknologwebdehizmet" >
+Web'de Hizmet
+</a> </li> <li> <a href="/arama?s=yerindehizmet" >
+Yerinde Hizmet
+</a> </li> <li> <a href="/arama?s=guvenlikpaketi" >
+Güvenlik Hizmeti
+</a> </li> <li> <a href="/arama?s=ekrankoruma" >
+Ekran Koruma Hizmeti
+</a> </li> <li> <a href="/arama?s=telefondahizmet" >
+Telefonda Hizmet
+</a> </li> <li> <a href="http://www.teknosa.com/arama?s=telefontablethizmet" target=&quot;_self&quot;>
+Mağazada Hizmet
+</a> </li> <li> <a href="/kategori/ses-ve-goruntu/kurulum-paketi/1365" >
+TÜM HİZMETLERİMİZ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="/teknogaranti" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/Yeni Görseller/logo.jpg" alt="Teknogaranti" /></div>
+Ek Garanti Hizmeti
+</a> </li> <li class="image-link"> <a href="/arama?s=teknologwebdehizmet" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/Yeni Görseller/kutu2.jpg" alt="Web Paketleri" /></div>
+Web'de Hizmet
+</a> </li> <li class="image-link"> <a href="/arama?s=yerindehizmet" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/Yeni Görseller/kutu1.jpg" alt="Yerinde Hizmet Paketleri" /></div>
+Yerinde Hizmet
+</a> </li> <li class="image-link"> <a href="/arama?s=guvenlikpaketi" > <div><img class="lazy" data-original="http://img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/Yeni%20G%C3%B6rseller/kutu3.jpg" alt="Güvenlik Paketleri" /></div>
+Güvenlik Hizmeti
+</a> </li> <li class="image-link"> <a href="/arama?s=ekrankoruma" > <div><img class="lazy" data-original="http://img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/Yeni%20G%C3%B6rseller/kutu4.jpg" alt="Ekran Koruma Ürünleri" /></div>
+Ekran Koruma Hizmeti
+</a> </li> <li class="image-link"> <a href="/arama?s=telefondahizmet" > <div><img class="lazy" data-original="//img-assets-teknosa.mncdn.com/Assets/images/UserImages//resources/files/Yeni Görseller/kutu5.jpg" alt="Uzaktan Erişim" /></div>
+Telefonda Hizmet
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> <li> <a href="http://www.teknosa.com/disneycollection" >Disney Collection<i class="fa fa-angle-right"></i></a> <div class="menu-items-level-3 style1 style2"> <div> <div class="left menu-item-list"> <ul> <li> <a href="/kategori/disney/oyuncak/1706" >
+Oyuncak
+</a> </li> <li> <a href="http://www.teknosa.com/kategori/disney/giyim/1728" >
+Giyim/Tekstil
+</a> </li> <li> <a href="http://www.teknosa.com/kategori/disney/kostum-ve-aksesuar/1719" >
+Kostüm & Aksesuar
+</a> </li> <li> <a href="/kategori/disney/ayakkabi-ve-canta/1723" >
+Ayakkabı ve Çanta
+</a> </li> <li> <a href="http://www.teknosa.com/kategori/disney/kostum/1720" >
+Kostüm
+</a> </li> <li> <a href="/kategori/disney/cocuk-oyuncaklari/1708" >
+Çocuk Oyuncakları
+</a> </li> <li> <a href="http://www.teknosa.com/kategori/disney/okul-urunleri/1712" >
+Okul Ürünleri
+</a> </li> <li> <a href="/kategori/disney/kisisel-aksesuar/1747" >
+Kişisel Aksesuar
+</a> </li> <li> <a href="http://www.teknosa.com/kategori/disney/tsum-tsum/1762" >
+Tsum Tsum
+</a> </li> <li> <a href="http://www.teknosa.com/katalog/disney" >
+TÜM DİSNEY ÜRÜNLERİ
+</a> </li> </ul> </div> <div class="left image-menu-item-list"> <ul> <li class="image-link"> <a href="http://www.teknosa.com/kategori/disney/okul-urunleri/1712" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/okul%20urun.jpg" alt="" /></div>
+Okul Ürünleri
+</a> </li> <li class="image-link"> <a href="/kategori/disney/kostum/1720" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/kost%C3%BCm-kategori.jpg" alt="Kostüm" /></div>
+Kostüm
+</a> </li> <li class="image-link"> <a href="/kategori/disney/pelus-oyuncak/1707" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/pelus.jpg" alt="Peluş" /></div>
+Peluş Oyuncak
+</a> </li> <li class="image-link"> <a href="http://www.teknosa.com/kategori/disney/oyuncak-araba/1711" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/araba(3).jpg" alt="Arabalar" /></div>
+Arabalar
+</a> </li> <li class="image-link"> <a href="/kategori/disney/bebek/1710" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/bebek.jpg" alt="Bebek" /></div>
+Bebek
+</a> </li> <li class="image-link"> <a href="/kategori/disney/pijama/1731" > <div><img class="lazy" data-original="//img-teknosa.mncdn.com/StaticContent/files/pijama.jpg" alt="Pijama" /></div>
+Pijama
+</a> </li> <li class="clear"></li> </ul> </div> <div class="clear"></div> </div> </div> </li> </ul> </div> </div> </li> <li class="clear"></li> </ul> </div> <div class="left search"> <div> <input type="text" name="search" id="search" placeholder="Ürün Ara" /> <input type="submit" value="" name="searchSubmit" id="searchSubmit" onclick="$.Teknosa.RedirectSearch();" /> <div class="clear"></div> </div> <div id="searchResultContainer"></div> </div> <div class="right customer-navigation"> <ul> <li id="customerNavagation"> <div> <div class="register"><a href="/yeni-uye">Yeni Üyelik</a></div> <div class="login"><a href="/uyelik">Üye Girişi Yap</a></div> </div> </li> <li class="sperator"> <span></span> </li> <li id="basket"> <a href="/sepet"> <div class="left basket"></div> <div class="right text"><span>Sepet</span></div> <div class="clear"></div> </a> </li> </ul> <div id="customerMenu"> <div class="module-item module-menu "> <div class="module-body module-menu-body"> <ul> <li class="menu-items-level-1"> <a href="/hesabim/siparislerim" class="menu-item" title="Siparişlerim" > <span class="name">Siparişlerim</span> </a> </li> <li class="menu-items-level-1"> <a href="/hesabim/bilgilerim" class="menu-item" title="Üyelik Bilgilerim" > <span class="name">Üyelik Bilgilerim</span> </a> </li> <li class="menu-items-level-1"> <a href="/hesabim/adreslerim" class="menu-item" title="Adreslerim" > <span class="name">Adreslerim</span> </a> </li> <li class="menu-items-level-1"> <a href="/hesabim/hediyeceklerim" class="menu-item" title="Hediye Çeklerim" > <span class="name">Hediye Çeklerim</span> </a> </li> <li class="menu-items-level-1"> <a href="/hesabim/teknik-servis" class="menu-item" title="İade ve Teknik Servis" > <span class="name">İade ve Teknik Servis</span> </a> </li> <li class="menu-items-level-1 logout"> <a href="/cikis" class="menu-item" title="Çıkış Yap" > <span class="name">Çıkış Yap</span> </a> </li> </ul> </div> </div> </div> </div> <div class="clear"></div> </div> </div> </div> <div id="content" class="container "> <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <li><a href="http://www.teknosa.com/" itemprop="url"> <span itemprop="title">ANASAYFA</span></a></li> <li><a href="http://www.teknosa.com/katalog/telekom" itemprop="url"> <span itemprop="title">TELEKOM</span></a></li> <li><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722" itemprop="url"> <span itemprop="title">AKILLI TELEFON</span></a></li> </ul> <aside id="sidebar"> <div class="widget filters"> <h3 class="primary-title"> <a href="http://www.teknosa.com/katalog/telekom">
+TELEKOM</a></h3> <ul class="unstyled list category-list"> <li class="current"><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722">
+AKILLI TELEFON</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/cep-telefonu/218">
+CEP TELEFONU</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/tasinabilir-sarj-cihazlari/1629">
+TAŞINABİLİR ŞARJ CİHAZLARI</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/giyilecek-aksesuar/1604">
+GİYİLEBİLİR AKSESUAR</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/hafiza-karti/1522">
+HAFIZA KARTI</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/navigasyon-cihazi/966">
+NAVİGASYON CİHAZI</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/kablolu-telefon/1519">
+KABLOLU TELEFON</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/kablosuz-telefon/1521">
+KABLOSUZ TELEFON</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/aksesuar/1518">
+TELEFON AKSESUARLARI</a></li> <li ><a href="http://www.teknosa.com/kategori/telekom/telsiz/236">
+TELSİZ</a></li> </ul> <script type="text/javascript">
+$(document).ready(function() {
+$('.filter-list .checked').next('a').css('font-family', '"open_sanssemibold", Arial, Sans-Serif');
+});
+</script> <h3 class="secondary-title">
+SEÇİNİZ</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_1" class="checkbox-label"> <input type="checkbox" id="c_1" name="c_1" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[seciniz:yeni-urunler,]" title="Yeni Ürünler"><span class="item">Yeni Ürünler<span>(19)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_2" class="checkbox-label"> <input type="checkbox" id="c_2" name="c_2" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[seciniz:stoklu-urunler,]" title="Stoklu Ürünler"><span class="item">Stoklu Ürünler<span>(192)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+İŞLETİM SİSTEMİ</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_3" class="checkbox-label"> <input type="checkbox" id="c_3" name="c_3" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[isletim-sistemi:android,]" title="ANDROİD"><span class="item">ANDROİD<span>(190)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_4" class="checkbox-label"> <input type="checkbox" id="c_4" name="c_4" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[isletim-sistemi:ios,]" title="İOS"><span class="item">İOS<span>(56)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+KAMERA ÇÖZÜNÜRLÜĞÜ(PİKSEL)</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_5" class="checkbox-label"> <input type="checkbox" id="c_5" name="c_5" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:5-mp,]" title="5 MP"><span class="item">5 MP<span>(4)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_6" class="checkbox-label"> <input type="checkbox" id="c_6" name="c_6" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:8-mp,]" title="8 MP"><span class="item">8 MP<span>(22)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_7" class="checkbox-label"> <input type="checkbox" id="c_7" name="c_7" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:13-mp,]" title="13 MP"><span class="item">13 MP<span>(102)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_8" class="checkbox-label"> <input type="checkbox" id="c_8" name="c_8" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:12-mp,]" title="12 MP"><span class="item">12 MP<span>(77)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_9" class="checkbox-label"> <input type="checkbox" id="c_9" name="c_9" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:16-mp,]" title="16 MP"><span class="item">16 MP<span>(31)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_10" class="checkbox-label"> <input type="checkbox" id="c_10" name="c_10" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:20-7-mp,]" title="20,7 MP"><span class="item">20,7 MP<span>(1)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_11" class="checkbox-label"> <input type="checkbox" id="c_11" name="c_11" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:21-5-mp,]" title="21,5 MP"><span class="item">21,5 MP<span>(3)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_12" class="checkbox-label"> <input type="checkbox" id="c_12" name="c_12" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[kamera-cozunurlugupiksel:23-mp,]" title="23 MP"><span class="item">23 MP<span>(6)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+MARKA</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_13" class="checkbox-label"> <input type="checkbox" id="c_13" name="c_13" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:apple,]" title="APPLE"><span class="item">APPLE<span>(56)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_14" class="checkbox-label"> <input type="checkbox" id="c_14" name="c_14" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:lg,]" title="LG"><span class="item">LG<span>(12)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_15" class="checkbox-label"> <input type="checkbox" id="c_15" name="c_15" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:sony,]" title="SONY"><span class="item">SONY<span>(17)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_16" class="checkbox-label"> <input type="checkbox" id="c_16" name="c_16" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:vestel,]" title="VESTEL"><span class="item">VESTEL<span>(19)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_17" class="checkbox-label"> <input type="checkbox" id="c_17" name="c_17" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:reeder,]" title="REEDER"><span class="item">REEDER<span>(9)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_18" class="checkbox-label"> <input type="checkbox" id="c_18" name="c_18" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:huawei,]" title="HUAWEI"><span class="item">HUAWEI<span>(18)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_19" class="checkbox-label"> <input type="checkbox" id="c_19" name="c_19" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:lenovo,]" title="LENOVO"><span class="item">LENOVO<span>(25)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_20" class="checkbox-label"> <input type="checkbox" id="c_20" name="c_20" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:preo,]" title="PREO"><span class="item">PREO<span>(2)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_21" class="checkbox-label"> <input type="checkbox" id="c_21" name="c_21" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:casper,]" title="CASPER"><span class="item">CASPER<span>(12)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_22" class="checkbox-label"> <input type="checkbox" id="c_22" name="c_22" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:samsung,]" title="SAMSUNG"><span class="item">SAMSUNG<span>(49)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_23" class="checkbox-label"> <input type="checkbox" id="c_23" name="c_23" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:asus,]" title="ASUS"><span class="item">ASUS<span>(6)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_24" class="checkbox-label"> <input type="checkbox" id="c_24" name="c_24" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:htc,]" title="HTC"><span class="item">HTC<span>(11)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_25" class="checkbox-label"> <input type="checkbox" id="c_25" name="c_25" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:general-mobile,]" title="GENERAL MOBILE"><span class="item">GENERAL MOBILE<span>(10)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+ÖN KAMERA</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_26" class="checkbox-label"> <input type="checkbox" id="c_26" name="c_26" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:var,]" title="VAR"><span class="item">VAR<span>(94)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_27" class="checkbox-label"> <input type="checkbox" id="c_27" name="c_27" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:5-mp,]" title="5 MP"><span class="item">5 MP<span>(65)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_28" class="checkbox-label"> <input type="checkbox" id="c_28" name="c_28" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:8-mp,]" title="8 MP"><span class="item">8 MP<span>(49)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_29" class="checkbox-label"> <input type="checkbox" id="c_29" name="c_29" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:8mp2mp,]" title="8MP+2MP"><span class="item">8MP+2MP<span>(1)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_30" class="checkbox-label"> <input type="checkbox" id="c_30" name="c_30" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:1-2-mp,]" title="1,2 MP"><span class="item">1,2 MP<span>(6)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_31" class="checkbox-label"> <input type="checkbox" id="c_31" name="c_31" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:13-mp,]" title="13 MP"><span class="item">13 MP<span>(7)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_32" class="checkbox-label"> <input type="checkbox" id="c_32" name="c_32" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:2-mp,]" title="2 MP"><span class="item">2 MP<span>(2)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_33" class="checkbox-label"> <input type="checkbox" id="c_33" name="c_33" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:7-mp,]" title="7 MP"><span class="item">7 MP<span>(19)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_34" class="checkbox-label"> <input type="checkbox" id="c_34" name="c_34" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[on-kamera:diger,]" title="Diğer"><span class="item">Diğer<span>(3)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+ÇİFT SİM</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_35" class="checkbox-label"> <input type="checkbox" id="c_35" name="c_35" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[cift-sim:var,]" title="VAR"><span class="item">VAR<span>(40)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_36" class="checkbox-label"> <input type="checkbox" id="c_36" name="c_36" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[cift-sim:yok,]" title="YOK"><span class="item">YOK<span>(144)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_37" class="checkbox-label"> <input type="checkbox" id="c_37" name="c_37" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[cift-sim:diger,]" title="Diğer"><span class="item">Diğer<span>(62)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+MOBİL BAĞLANTI HIZI</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_38" class="checkbox-label"> <input type="checkbox" id="c_38" name="c_38" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[mobil-baglanti-hizi:45g,]" title="4.5G"><span class="item">4.5G<span>(44)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_39" class="checkbox-label"> <input type="checkbox" id="c_39" name="c_39" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[mobil-baglanti-hizi:4-5g,]" title="4,5G"><span class="item">4,5G<span>(113)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_40" class="checkbox-label"> <input type="checkbox" id="c_40" name="c_40" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[mobil-baglanti-hizi:3g,]" title="3G"><span class="item">3G<span>(3)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_41" class="checkbox-label"> <input type="checkbox" id="c_41" name="c_41" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[mobil-baglanti-hizi:diger,]" title="Diğer"><span class="item">Diğer<span>(86)</span></span></a> </label> </div> </li> </ul> <h3 class="secondary-title">
+FİYAT ARALIĞI</h3> <ul class="unstyled list filter-list" data-show-item="9"> <li> <div class="checkbox-wrap"> <label for="c_42" class="checkbox-label"> <input type="checkbox" id="c_42" name="c_42" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[fiyat-araligi:1000-tl-alti,]" title="1000 TL altı"><span class="item">1000 TL altı<span>(77)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_43" class="checkbox-label"> <input type="checkbox" id="c_43" name="c_43" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[fiyat-araligi:1000-1500-tl-arasi,]" title="1000-1500 TL arası"><span class="item">1000-1500 TL arası<span>(58)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_44" class="checkbox-label"> <input type="checkbox" id="c_44" name="c_44" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[fiyat-araligi:1500-2000-tl-arasi,]" title="1500-2000 TL arası"><span class="item">1500-2000 TL arası<span>(23)</span></span></a> </label> </div> </li> <li> <div class="checkbox-wrap"> <label for="c_45" class="checkbox-label"> <input type="checkbox" id="c_45" name="c_45" class="minimal pull-left"
+> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[fiyat-araligi:2000-tl-uzeri,]" title="2000 TL üzeri"><span class="item">2000 TL üzeri<span>(88)</span></span></a> </label> </div> </li> </ul> </div> <a href="http://asset-teknosa.cubecdn.net/urun-katalogu/20062014/default.html" target="_blank" class="widget type2" style="display: none"> <span>TURUNCU İNDİRİM<br>
+KATALOĞU</span> <img src="/assets/img/dergi.jpg" class="catalog" alt="" /> </a> </aside> <div class="main"> <div class="filter-bar"> <div class="top-bar"> <p> <strong>AKILLI TELEFON</strong> kategorisinde <strong>246</strong> adet ürün bulundu.
+</p> <div class="pull-right"> <div class="grid-selector pull-left"> <a href="javascript:;"
+class="col-grid current"></a> <a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?display=2"
+class="list-grid"></a> </div> <div class="select type1 pull-left selectboxHeight"> <select name="product-list-order" id="product-list-order"> <option value="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722" selected="selected"
+>
+EN POPÜLER</option> <option value="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?order=3" >
+FİYATA GÖRE (ARTAN)</option> <option value="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?order=4" >
+FİYATA GÖRE (AZALAN)</option> </select> </div> </div> </div> <div class="filter-meta"> </div> </div> <div id="grid-view" class="product-list grid"> <ul class="horizontal"> <li><a href="/urunler/125071132/apple-iphone-5s-16gb-space-gray-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071132); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-special"></div> <div class="badges-discount"> <div class="txt">%6</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071132-1-apple_iphone_5s_16gb_space_gray_akilli_telefon.jpg" alt="APPLE IPHONE 5S 16GB SPACE GRAY AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/APPLE-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+APPLE IPHONE 5S 16GB SPACE GRAY AKILLI TELEFON</span> <del class="sales old-sales">
+1.599<sup>,00</sup> TL</del> <span class="new-sales sales">
+1.489<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071133/apple-iphone-5s-16gb-silver-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071133); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-special"></div> <div class="badges-discount"> <div class="txt">%6</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071133-1-apple_iphone_5s_16gb_silver_akilli_telefon.jpg" alt="APPLE IPHONE 5S 16GB SILVER AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/APPLE-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+APPLE IPHONE 5S 16GB SILVER AKILLI TELEFON</span> <del class="sales old-sales">
+1.599<sup>,00</sup> TL</del> <span class="new-sales sales">
+1.489<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071621/samsung-galaxy-j2-siyah-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071621); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071621-1-samsung_galaxy_j2_siyah_akilli_telefon.jpg" alt="SAMSUNG GALAXY J2 SIYAH AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY J2 SIYAH AKILLI TELEFON</span> <span class="sales">
+799<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071589/samsung-n920-galaxy-note-5-altin-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071589); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-discount"> <div class="txt">%10</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071589-1-samsung_n920_galaxy_note_5_altin_akilli_telefon.jpg" alt="SAMSUNG N920 GALAXY NOTE 5 ALTIN AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG N920 GALAXY NOTE 5 ALTIN AKILLI TELEFON</span> <del class="sales old-sales">
+2.999<sup>,00</sup> TL</del> <span class="new-sales sales">
+2.699<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071590/samsung-n920-galaxy-note-5-siyah-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071590); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-discount"> <div class="txt">%10</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071590-1-samsung_n920_galaxy_note_5_siyah_akilli_telefon.jpg" alt="SAMSUNG N920 GALAXY NOTE 5 SIYAH AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG N920 GALAXY NOTE 5 SIYAH AKILLI TELEFON</span> <del class="sales old-sales">
+2.999<sup>,00</sup> TL</del> <span class="new-sales sales">
+2.699<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071627/apple-iphone-6s-plus-16gb-space-gray-akilli-telefo" onclick="$.Teknosa.ProductListingProductClick(125071627); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071627-1-apple_iphone_6s_plus_16gb_space_gray_akilli_telefo.jpg" alt="APPLE iPhone 6S Plus 16GB SPACE GRAY AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/APPLE-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+APPLE iPhone 6S Plus 16GB SPACE GRAY AKILLI TELEFON</span> <span class="sales">
+3.299<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071628/apple-iphone-6s-plus-16gb-silver-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071628); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071628-1-apple_iphone_6s_plus_16gb_silver_akilli_telefon.jpg" alt="APPLE iPhone 6S Plus 16GB SILVER AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/APPLE-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+APPLE iPhone 6S Plus 16GB SILVER AKILLI TELEFON</span> <span class="sales">
+3.299<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071661/samsung-n920-galaxy-note-5-32-gb-silver-akilli-tel" onclick="$.Teknosa.ProductListingProductClick(125071661); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-discount"> <div class="txt">%10</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071661-1-samsung_n920_galaxy_note_5_32_gb_silver_akilli_tel.jpg" alt="SAMSUNG N920 GALAXY NOTE 5 32 GB SILVER AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG N920 GALAXY NOTE 5 32 GB SILVER AKILLI TELEFON</span> <del class="sales old-sales">
+2.999<sup>,00</sup> TL</del> <span class="new-sales sales">
+2.699<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071672/vestel-venus-v3-5570-tekno-gri" onclick="$.Teknosa.ProductListingProductClick(125071672); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071672-1-vestel_venus_v3_5570_tekno_gri.jpg" alt="Vestel Venus V3 5570 TEKNO GRi" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/VESTEL-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+Vestel Venus V3 5570 TEKNO GRi</span> <span class="sales">
+997<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071673/vestel-venus-v3-5570-inci-beyazi" onclick="$.Teknosa.ProductListingProductClick(125071673); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071673-1-vestel_venus_v3_5570_inci_beyazi.jpg" alt="Vestel Venus V3 5570 iNCi BEYAZI" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/VESTEL-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+Vestel Venus V3 5570 iNCi BEYAZI</span> <span class="sales">
+997<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071630/apple-iphone-6s-plus-16gb-rose-gold-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071630); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071630-1-apple_iphone_6s_plus_16gb_rose_gold_akilli_telefon.jpg" alt="APPLE iPhone 6S Plus 16GB ROSE GOLD AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/APPLE-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+APPLE iPhone 6S Plus 16GB ROSE GOLD AKILLI TELEFON</span> <span class="sales">
+3.299<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071687/htc-desire-728g-dual-sim-beyaz-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071687); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071687-1-htc_desire_728g_dual_sim_beyaz_akilli_telefon.jpg" alt="HTC DESIRE 728G DUAL SIM BEYAZ AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/HTC-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+HTC DESIRE 728G DUAL SIM BEYAZ AKILLI TELEFON</span> <span class="sales">
+797<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071703/samsung-galaxy-a310f-a3-2016-gold-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071703); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-discount"> <div class="txt">%8</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071703-1-samsung_galaxy_a310f_a3_2016_gold_akilli_telefon.jpg" alt="SAMSUNG GALAXY A310F A3 2016 GOLD AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY A310F A3 2016 GOLD AKILLI TELEFON</span> <del class="sales old-sales">
+1.199<sup>,00</sup> TL</del> <span class="new-sales sales">
+1.099<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071704/samsung-galaxy-a310f-a3-2016-black-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071704); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-discount"> <div class="txt">%8</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071704-1-samsung_galaxy_a310f_a3_2016_black_akilli_telefon.jpg" alt="SAMSUNG GALAXY A310F A3 2016 BLACK AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY A310F A3 2016 BLACK AKILLI TELEFON</span> <del class="sales old-sales">
+1.199<sup>,00</sup> TL</del> <span class="new-sales sales">
+1.099<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071705/samsung-galaxy-a310f-a3-2016-white-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071705); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> <div class="badges-discount"> <div class="txt">%8</div> </div> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071705-1-samsung_galaxy_a310f_a3_2016_white_akilli_telefon.jpg" alt="SAMSUNG GALAXY A310F A3 2016 WHITE AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY A310F A3 2016 WHITE AKILLI TELEFON</span> <del class="sales old-sales">
+1.199<sup>,00</sup> TL</del> <span class="new-sales sales">
+1.099<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071715/lg-h960-v10-32-gb-beyaz-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071715); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071715-1-lg_h960_v10_32_gb_beyaz_akilli_telefon.jpg" alt="LG H960  V10 32 GB  BEYAZ AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/LG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+LG H960  V10 32 GB  BEYAZ AKILLI TELEFON</span> <span class="sales">
+1.999<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071718/casper-via-m1-32-gb-beyaz-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071718); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071718-1-casper_via_m1_32_gb_beyaz_akilli_telefon.jpg" alt="CASPER VIA M1 32 GB BEYAZ AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/CASPER-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+CASPER VIA M1 32 GB BEYAZ AKILLI TELEFON</span> <span class="sales">
+999<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071735/casper-via-m1-32-gb-siyah-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071735); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071735-1-casper_via_m1_32_gb_siyah_akilli_telefon.jpg" alt="CASPER VIA M1 32 GB SiYAH AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/CASPER-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+CASPER VIA M1 32 GB SiYAH AKILLI TELEFON</span> <span class="sales">
+999<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071736/samsung-galaxy-s7-g930f-gold-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071736); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071736-1-samsung_galaxy_s7_g930f_gold_akilli_telefon.jpg" alt="SAMSUNG GALAXY S7 G930F GOLD AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY S7 G930F GOLD AKILLI TELEFON</span> <span class="sales">
+2.999<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071737/samsung-galaxy-s7-g930f-black-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071737); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071737-1-samsung_galaxy_s7_g930f_black_akilli_telefon.jpg" alt="SAMSUNG GALAXY S7 G930F BLACK AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY S7 G930F BLACK AKILLI TELEFON</span> <span class="sales">
+2.999<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> <li><a href="/urunler/125071738/samsung-galaxy-s7-g930f-silver-akilli-telefon" onclick="$.Teknosa.ProductListingProductClick(125071738); return true;" class="product"> <div class="grid-badges-container" style="z-index: 12"> </div> <figure class="valign" style="z-index: 10;"> <div class="valign-inner"> <img src="//img-teknosa.mncdn.com/TeknosaImg/productImages/228x158/125071738-1-samsung_galaxy_s7_g930f_silver_akilli_telefon.jpg" alt="SAMSUNG GALAXY S7  G930F SILVER AKILLI TELEFON" /> <div class="small-brand-logo"> <img src='http://img-teknosa.mncdn.com/TeknosaImg/productImages/MarkaLogoList/SAMSUNG-small.png' alt="" /> </div> </div> </figure> <span class="product-name">
+SAMSUNG GALAXY S7  G930F SILVER AKILLI TELEFON</span> <span class="sales">
+2.999<sup>,00</sup> TL</span> <div class="badge-box"> </div> </a> </li> </ul> </div> <script type="text/javascript">
+//$(document).ready(function () {
+//    //// grid anında item'lar en yüksek değeri alır
+//    //var maxHeight = 0
+//    //$('.product-list.grid > ul > li').each(function () {
+//    //    if ($(this).height() > maxHeight) {
+//    //        maxHeight = $(this).height();
+//    //        // 10px padding-bottom değeridir.
+//    //    }
+//    //});
+//    //$('.product-list.grid > ul > li').height(maxHeight + 10);
+//    ///////////////////////////////////////////////////
+//});
+</script> <div class="pagination-wrap"> <ul class="pagination"> <li><a href="#" class="current">
+1</a></li> <li><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?page=2" class="">
+2</a></li> <li><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?page=3" class="">
+3</a></li> <li><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?page=4" class="">
+4</a></li> <li><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?page=5" class="">
+5</a></li> <li><a href="http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?page=2" class=""> <i class="icon-angle-right"></i></a></li> </ul> </div> <div class="sarea-category"> <div style="color: black;"> <p><strong>4</strong><strong>.5G nedir?</strong></p> <p>4.5G &ccedil;ok daha hizli mobil internet teknolojisi saglayan en gelismis d&ouml;rd&uuml;nc&uuml; nesil mobil internet teknolojisidir.</p> <p>&nbsp;</p> <p><strong>4.5G ile hayatimizda neler degisecek?</strong></p> <p>4.5G teknolojisinin sagladigi &ccedil;ok daha hizli mobil internet teknolojisi ile;</p> <p>Video, resim ve dosyalarinizi daha hizli indirebilecek ve paylasabileceksiniz.</p> <p>Azalan gecikme ve duraklama ile beklemeden &ccedil;ok daha hizli ve keyifli online oyun oynayabileceksiniz.</p> <p>Y&uuml;ksek g&ouml;r&uuml;nt&uuml; kalitesi ile film ve dizileri full HD izleyebileceksiniz.</p> <p>Sosyal medyada &ccedil;ok daha hizli paylasim yapabileceksiniz.</p> <p>&nbsp;</p> <p><strong>3G ile 4.5G farki nedir?</strong></p> <p>2GB boyutunda video 3G hiziyla 780 saniyede indirilirken 4.5G hiziyla 54 saniyede indirilecektir.<br /> 250 MB boyutunda video 3G hiziyla 387 saniyede y&uuml;klenirken 4.5 G hiziyla 40 saniyede y&uuml;klenecektir.</p> </div> </div> </div> <form method="post" action="./722" id="ctl00"> <div class="aspNetHidden"> <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUIMTk5Mzg0NDUPZBYCZg9kFgRmD2QWAmYPZBYCAgEPFgIeBFRleHQFHEFLSUxMSSBURUxFRk9OIC0gVGVrbm9zYS5jb21kAgEPFgIeC2RhdGEtbW9kdWxlBQdsaXN0aW5nZGQyacLCV58gPmGHhmnTrDO8XUJWhg==" /> </div> <input type="hidden" name="ctl00$body$antiforgeryPL" id="body_antiforgeryPL" value="3341703f-f441-45d4-b9fa-1f8a822e5772" /> <div class="aspNetHidden"> <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="876E3D0F" /> <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALbf6YE/WdobTA4+XIqQj/4eJ2dPqGGp7ZSUDK2DBFnYAEy15xibdD+6atoYpLqO5SiuhUK" /> </div></form> </div> <div class="footer"> <div class="footer-top"> <div class="container"> <div class="left bottom-search-box"> <div class="title">ÜRÜN ARAMA</div> <div class="src-area"> <input type="text" id="ButtomSearch" placeholder="Ürün Ara"> <input type="submit" name="searchSubmit" value="" onclick="$.Teknosa.RedirectSearch({ key: '#ButtomSearch' });"> </div> </div> <div class="right visited-products"> <div class="module-item module-menu horizontal"> <div class="module-title module-menu-title"><span>SIK ZİYARET EDİLEN ÜRÜNLER</span></div> <div class="module-body module-menu-body"> <ul> <li class="menu-items-level-1"> <a href="/kategori/telekom/cep-bilgisayari-pda/722" class="menu-item" title="Akıllı Telefon" > <span class="name">Akıllı Telefon</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/oyun-hobi/oyun-konsollari/1413" class="menu-item" title="Oyun Konsolu" > <span class="name">Oyun Konsolu</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/ses-ve-goruntu/lcd-plazma-televizyon/852" class="menu-item" title="LED TV" > <span class="name">LED TV</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/bilgisayar/notebook/63?q=[bilgisayar-tipi:2si-1-arada,]" class="menu-item" title="2'si 1 Arada PC" > <span class="name">2'si 1 Arada PC</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/beyaz-esya/buzdolabi/1476" class="menu-item" title="Buzdolabı" > <span class="name">Buzdolabı</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/bilgisayar/tablet-pc/739" class="menu-item" title="Tablet PC" > <span class="name">Tablet PC</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/beyaz-esya/camasir-makinesi/1049" class="menu-item" title="Çamaşır Makinesi" > <span class="name">Çamaşır Makinesi</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/bilgisayar/notebook/63" class="menu-item" title="Notebook" > <span class="name">Notebook</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/bilgisayar/veri-depolama/1468" class="menu-item" title="Veri Depolama" > <span class="name">Veri Depolama</span> </a> </li> <li class="menu-items-level-1"> <a href="/katalog/fotograf-video-kamera" class="menu-item" title="Fotoğraf Makinesi" > <span class="name">Fotoğraf Makinesi</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/ses-ve-goruntu/ev-sinema-sistemleri/93" class="menu-item" title="Ev Sinema Sistemi" > <span class="name">Ev Sinema Sistemi</span> </a> </li> <li class="menu-items-level-1"> <a href="/kategori/beyaz-esya/kucuk-ev-aletleri/1330" class="menu-item" title="Elektrikli Ev Aletleri" > <span class="name">Elektrikli Ev Aletleri</span> </a> </li> </ul> </div> </div> </div> <div class="clear"></div> </div> </div> <div class="footer-center"> <div class="container"> <div class="help-list left"> <a href="/musteri-hizmetleri" class="mhz"> <i></i> <span class="title">Müşteri Hizmetleri</span> <span class="number">0850 222 55 99</span> </a> <a href="/magazalar" class="shops"> <i></i> <span>Mağazalarımız</span> </a> <a href="/yardim-merkezi" class="help-center"> <i></i> <span>Yardım Merkezi</span> </a> <a href="/yardim-merkezi/garanti-iade-ve-degisim" class="guarantee"> <i></i> <span>Garanti & İade</span> </a> <a href="/Pages/CallCenter/BizeUlasin.aspx" class="contact-us"> <i></i> <span>İletişim</span> </a> </div> <div class="newsletter-area left"> <div class="banner"><img src="/Content/teknosa/images/footer-newsletter-picture.png" alt="Teknosa fırsatları, kampanya ve duyuruları ile ilgili e-posta almak ister misiniz?" /></div> <p>Teknosa <strong>fırsatları,<br />kampanya ve duyuruları</strong> ile ilgili e-posta almak ister misiniz?</p> <div class="send-eposta"> <input type="text" id="newsletterInput" placeholder="E-postanızı yazınız" onclick=""> <div class="button w-120 h-50 darkOrange right" onclick="$.Teknosa.NewsletterRegister();">GÖNDER <i class="fa fa-angle-double-right"></i></div> </div> </div> <div class="site-map left"> <div class="left"> <div class="module-item module-menu item"> <div class="module-title module-menu-title"><span>KURUMSAL</span></div> <div class="module-body module-menu-body"> <ul> <li class="menu-items-level-1"> <a href="/KurumsalSayfalar/Turkce/default_tr.aspx" class="menu-item" title="Hakkımızda" > <span class="name">Hakkımızda</span> </a> </li> <li class="menu-items-level-1"> <a href="http://yatirimci.teknosa.com/anasayfa" class="menu-item" title="Yatırımcı İlişkileri" target="_blank"> <span class="name">Yatırımcı İlişkileri</span> </a> </li> <li class="menu-items-level-1"> <a href="http://yatirimci.teknosa.com/homepage" class="menu-item" title="Investor Relations" > <span class="name">Investor Relations</span> </a> </li> <li class="menu-items-level-1"> <a href="/KurumsalSayfalar/Turkce/KurumsalSatis.aspx" class="menu-item" title="Kurumsal Satış" > <span class="name">Kurumsal Satış</span> </a> </li> <li class="menu-items-level-1"> <a href="/kurumsalsayfalar/turkce/insanKaynaklari.aspx" class="menu-item" title="İnsan Kaynakları" > <span class="name">İnsan Kaynakları</span> </a> </li> <li class="menu-items-level-1"> <a href="http://magazalar.teknosa.com/" class="menu-item" title="Mağazalarımız" > <span class="name">Mağazalarımız</span> </a> </li> <li class="menu-items-level-1"> <a href="/teknogaranti" class="menu-item" title="Genişletilmiş Ek Garanti" > <span class="name">Genişletilmiş Ek Garanti</span> </a> </li> <li class="menu-items-level-1"> <a href="/Pages/CallCenter/Hizmetler.aspx" class="menu-item" title="Hizmetler" > <span class="name">Hizmetler</span> </a> </li> <li class="menu-items-level-1"> <a href="/Pages/CallCenter/BizeUlasin.aspx" class="menu-item" title="İletişim" > <span class="name">İletişim</span> </a> </li> <li class="menu-items-level-1"> <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/10305" class="menu-item" title="Bilgi Toplumu Hizmetleri" target="_blank"> <span class="name">Bilgi Toplumu Hizmetleri</span> </a> </li> <li class="menu-items-level-1"> <a href="http://www.teknosa.com/pages/gizlilik-sozlesmesi" class="menu-item" title="Gizlilik Sözleşmesi" > <span class="name">Gizlilik Sözleşmesi</span> </a> </li> </ul> </div> </div> </div> <div class="left"> <div class="module-item module-menu item"> <div class="module-title module-menu-title"><span>BİLGİ</span></div> <div class="module-body module-menu-body"> <ul> <li class="menu-items-level-1"> <a href="/Pages/CallCenter/TeknoDictionary.aspx" class="menu-item" title="Tekno Sözlük" > <span class="name">Tekno Sözlük</span> </a> </li> <li class="menu-items-level-1"> <a href="/yardim-merkezi/islem-rehberi" class="menu-item" title="İşlem Rehberi" > <span class="name">İşlem Rehberi</span> </a> </li> </ul> </div> </div> <div class="module-item module-menu item dark"> <div class="module-title module-menu-title"><span>HİZMETLER</span></div> <div class="module-body module-menu-body"> <ul> <li class="menu-items-level-1"> <a href="/Pages/CallCenter/UcretsizTeslimat.aspx" class="menu-item" title="Ücretsiz Teslimat" > <span class="name">Ücretsiz Teslimat</span> </a> </li> <li class="menu-items-level-1"> <a href="/Pages/magazadan-teslim" class="menu-item" title="Mağazadan Teslimat" > <span class="name">Mağazadan Teslimat</span> </a> </li> <li class="menu-items-level-1"> <a href="/pages/e-atik" class="menu-item" title="Geri Dönüşüm" > <span class="name">Geri Dönüşüm</span> </a> </li> </ul> </div> </div> </div> </div> <div class="clear"></div> </div> </div> <div class="footer-bottom"> <div class="container"> <div class="mobile-band"> <div class="slogan left">Teknosa her yerde <i class="fa fa-angle-right"></i></div> <div class="left mobile-icons"> <div class="left item"><a href="https://play.google.com/store/apps/details?id=com.tmob.teknosa&hl=en" target="_blank"><img src="/Content/teknosa/images/mobile-googleplay.png" alt="googleplay" /></a></div> <div class="left item"><a href="https://itunes.apple.com/tr/app/teknosa/id724839784?mt=8" target="_blank"><img src="/Content/teknosa/images/mobile-appstore.png" alt="appstore" /></a></div> <div class="left item"><a href="https://itunes.apple.com/tr/app/teknosa-ipad/id725023783?l=tr&mt=8" target="_blank"><img src="/Content/teknosa/images/mobile-appstore-ipad.png" alt="appstore ipad" /></a></div> <div class="left item"><a href="http://apps.microsoft.com/windows/tr-tr/app/96cddef1-fe1a-4f51-82db-c75e4a04ee46" target="_blank"><img src="/Content/teknosa/images/mobile-windows-store.png" alt="windows store" /></a></div> <div class="clear"></div> </div> <div class="right social-icons"> <a href="https://instagram.com/teknosa" target="_blank" class="instagram left"></a> <a href="http://www.facebook.com/teknosa" target="_blank" class="facebook left"></a> <a href="https://twitter.com/Teknosa" target="_blank" class="twitter left"></a> <div class="clear"></div> </div> <div class="clear"></div> </div> <div class="payment"> <img src="/Assets/img/payment-options-v4.png" alt="payment" /> </div> </div> <div class="copyright"> <div class="sa-logo"></div> <div class="container"> <div>
+Copyright © 2000-2017 Teknosa.com, Her hakkı saklıdır.
+</div> </div> </div> </div> </div> <div id="fb-root" style="display: none"> </div> <script type="text/javascript" language="javascript">
+window.TeknosaAppUrl = 'http://www.teknosa.com/';
+window.DestinationPageUrl = 'http://www.teknosa.com/kategori/telekom/cep-bilgisayari-pda/722?q=[marka:general-mobile,]';
+window.CurrentPageUrl = 'http%3a%2f%2fwww.teknosa.com%2fkategori%2ftelekom%2fcep-bilgisayari-pda%2f722';
+window.LightBoxLoginPageUrl = '/LightBoxPage/LightBoxSignIn.aspx';
+</script> <div id="toTop" style="display: none;"> </div> </body> </html>
