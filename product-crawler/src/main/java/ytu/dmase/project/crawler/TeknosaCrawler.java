@@ -5,6 +5,7 @@ import java.net.URL;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.*;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
@@ -19,6 +20,7 @@ import com.google.inject.Inject;
 
 import edu.uci.ics.crawler4j.crawler.Page;
 import edu.uci.ics.crawler4j.url.WebURL;
+import ytu.dmase.project.model.product.Category;
 import ytu.dmase.project.model.product.Product;
 import ytu.dmase.project.service.IProductService;
 
@@ -27,10 +29,18 @@ public class TeknosaCrawler extends ProductCrawler {
 	private String _domain = "http://www.teknosa.com";
 	
 	// Logger classı program geneli ayara göre console, dosyaya veya başka bir yere bilgi yazar.
-	private static final Logger _logger = LoggerFactory.getLogger(TeknosaCrawler.class);
+	private final static Logger _logger = LoggerFactory.getLogger(TeknosaCrawler.class);
 	
+	// Used for marking logs as parsing for further filterin if needed.
+	private final static Marker _parsingMarker = MarkerFactory.getMarker("PARSING");
+	
+	// Filters for url.
 	private final static Pattern _filters = Pattern.compile(".*(\\.(css|js|gif|jpg"
             + "|png|mp3|mp3|zip|gz))$");
+	
+	// Used for getting the category fragment from the page url.
+	private final static Pattern _categoryPattern = Pattern.compile("((kategori)|(katalog))/(?<ctg>(\\w|-)*)");
+	
 	
 	// TODO: Ürünleri kategorilerine göre ayır.
 	// TODO: Ürün resimlerini de al.
@@ -58,8 +68,7 @@ public class TeknosaCrawler extends ProductCrawler {
 		}
 		else
 		{
-			Marker marker = MarkerFactory.getMarker("NOPRODUCT");
-			_logger.info(marker, String.format("No products in this page: %s", page.getWebURL().toString()));
+			_logger.info(_parsingMarker, String.format("No products in this page: %s", page.getWebURL().toString()));
 		}
 		
 		super.visit(page);
@@ -75,13 +84,16 @@ public class TeknosaCrawler extends ProductCrawler {
 		String href = url.getURL().toLowerCase();
 		boolean isNormalPage = !_filters.matcher(href).matches();
 		
+		// Ürün araması sonucu gelen ürünlerden kategori bilgisi çıkaramıyoruz.
+		boolean isSearchLink = url.getURL().startsWith(_domain + "/arama");
+		
 		// Url ürünün kendi sayfasına mı gidiyor?
 		boolean isProductUrl = url.getURL().contains("urunler");
 		
 		// Url ürünün kendi sayfasına gitmesin. Çünkü ürün bilgileri
 		// ürünleri toplu listeleyen sayfadan çoklu okunuyor.
 		// Ürünün kendi sayfasına gitmek için bir sebep yok.
-		boolean visit = isDomainTeknosa && !isProductUrl && isNormalPage;
+		boolean visit = isDomainTeknosa && !isProductUrl && isNormalPage && !isSearchLink;
 		if(visit)
 		{
 			//_logger.info(String.format("Will visit: %s", url.toString()));
@@ -122,6 +134,7 @@ public class TeknosaCrawler extends ProductCrawler {
 		// classlarına sahip tek elementin içindeki 'li' elementleridir.
 		Elements productListElements = doc.select(".product-list.grid li");
 		
+		
 		// Her bir html elementi için product okuma işlemi yap.
 		productListElements.forEach((e) -> {
 			Product product = parseProduct(e);
@@ -130,6 +143,14 @@ public class TeknosaCrawler extends ProductCrawler {
 			else
 				_logger.error("Couldn't parse an element.");
 		});
+		
+		// Sayfada ürün bulunmuşsa o sayfadan kategori bilgisi çıkarıp
+		// bulunan ürünlerin kategori bilgisini set et.
+		if(products.size() > 0)
+		{
+			Category ctg = categoryFromUrl(page.getWebURL().getURL());
+			products.forEach(p -> p.set_category(ctg));
+		}
 		
 		return products;
 	}
@@ -182,6 +203,38 @@ public class TeknosaCrawler extends ProductCrawler {
 		}
 		
 		return product;
+	}
+	
+	protected Category categoryFromUrl(String url)
+	{
+		Matcher matcher = _categoryPattern.matcher(url);
+		if(!matcher.find())
+		{
+			_logger.warn(_parsingMarker, String.format("Category (%s) is different from expected. returning as 'other'.", url));
+			return Category.other;
+		}
+		String ctg = matcher.group("ctg");
+		
+		if(ctg == null)
+			throw new IllegalArgumentException("Couldn't parse category info from url");
+		
+		switch(ctg)
+		{
+		case "ses-ve-goruntu":
+		case "telekom":
+		case "bilgisayar":
+		case "fotograf-video-kamera":
+		case "beyaz-esya":
+			return Category.electronics;
+		case "oyun-hobi":
+		case "disney":
+			return Category.entertainment;
+		case "kisisel-bakim":
+		case "spor":
+			return Category.health;
+		}
+		
+		return null;
 	}
 	
 }
