@@ -5,11 +5,15 @@ import java.net.URL;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.*;
+import java.util.regex.Pattern;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.Marker;
+import org.slf4j.MarkerFactory;
 
 import com.google.inject.Inject;
 
@@ -25,6 +29,8 @@ public class TeknosaCrawler extends ProductCrawler {
 	// Logger classı program geneli ayara göre console, dosyaya veya başka bir yere bilgi yazar.
 	private static final Logger _logger = LoggerFactory.getLogger(TeknosaCrawler.class);
 	
+	private final static Pattern _filters = Pattern.compile(".*(\\.(css|js|gif|jpg"
+            + "|png|mp3|mp3|zip|gz))$");
 	
 	// TODO: Ürünleri kategorilerine göre ayır.
 	// TODO: Ürün resimlerini de al.
@@ -46,7 +52,15 @@ public class TeknosaCrawler extends ProductCrawler {
 		}
 		
 		// Eldeki ürünleri sisteme veriyoruz.
-		handOver(products.toArray(new Product[products.size()]));
+		if(products.size() > 0)
+		{
+			handOver(products.toArray(new Product[products.size()]));			
+		}
+		else
+		{
+			Marker marker = MarkerFactory.getMarker("NOPRODUCT");
+			_logger.info(marker, String.format("No products in this page: %s", page.getWebURL().toString()));
+		}
 		
 		super.visit(page);
 	}
@@ -57,18 +71,23 @@ public class TeknosaCrawler extends ProductCrawler {
 		// Url teknosa.com domaini altında mı?
 		boolean isDomainTeknosa = url.getURL().startsWith(_domain);
 		
+		// jpg, mp3, css tarzı sayfalara girme
+		String href = url.getURL().toLowerCase();
+		boolean isNormalPage = !_filters.matcher(href).matches();
+		
 		// Url ürünün kendi sayfasına mı gidiyor?
 		boolean isProductUrl = url.getURL().contains("urunler");
 		
 		// Url ürünün kendi sayfasına gitmesin. Çünkü ürün bilgileri
 		// ürünleri toplu listeleyen sayfadan çoklu okunuyor.
 		// Ürünün kendi sayfasına gitmek için bir sebep yok.
-		boolean visit = isDomainTeknosa && !isProductUrl;
+		boolean visit = isDomainTeknosa && !isProductUrl && isNormalPage;
 		if(visit)
 		{
 			//_logger.info(String.format("Will visit: %s", url.toString()));
 		}
-		return isDomainTeknosa && !isProductUrl;
+		
+		return visit;
 	}
 
 	// Her bir ProductCrawler objesi domaine bilgisine sahip olmalı.
@@ -82,7 +101,15 @@ public class TeknosaCrawler extends ProductCrawler {
 	public Collection<Product> parseProducts(Page page) throws UnsupportedEncodingException
 	{
 		Collection<Product> products = new ArrayList<Product>();
-		String html = new String(page.getContentData(), page.getContentCharset());
+		String charsetName = page.getContentCharset();
+		
+		if(charsetName == null)
+		{
+			// Sayfa charset değeri css dosyalarında null olur. 
+			return products;
+		}
+		
+		String html = new String(page.getContentData(), charsetName);
 		
 		// Jsoup kullanarak sayfada içerik araması yapıyoruz.
 		// Regex ile de olabilir. Jsoup css selector kullanıyor.
