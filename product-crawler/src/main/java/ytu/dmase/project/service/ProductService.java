@@ -33,14 +33,20 @@ public class ProductService implements IProductService {
 			// Her ürünün linki tektir. Aynı linki paylaşan iki farklı ürün olamaz.
 			if(existingProduct == null)
 			{
-				_logger.info(String.format("Saving a new product. (%s)", p));
+				_logger.debug(String.format("Saving a new product. (%s)", p));
 				_repo.Save(p);
 				_newProductCounter++;
 			} 
 			else
 			{
-				_logger.info(String.format("Updating existing product. (%s)", existingProduct));
+				_logger.debug(String.format("Updating existing product. (%s)", existingProduct));
 				existingProduct.set_price(p.get_price());
+				existingProduct.set_category(p.get_category());
+				existingProduct.set_image(p.get_image());
+				existingProduct.set_description(p.get_description());
+				existingProduct.set_brand(p.get_brand());
+				existingProduct.set_model(p.get_model());
+				existingProduct.set_name(p.get_name());
 				_repo.Update(existingProduct);
 				_updateCounter++;
 			}
