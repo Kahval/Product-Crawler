@@ -22,9 +22,6 @@ public class TeknosaCrawler extends ProductCrawler {
 
 	private String _domain = "http://www.teknosa.com";
 	
-	// Ürün servisi. Okunan ürünleri sisteme iletmek için kullanılır.
-	private IProductService _service;
-	
 	// Logger classı program geneli ayara göre console, dosyaya veya başka bir yere bilgi yazar.
 	private static final Logger _logger = LoggerFactory.getLogger(TeknosaCrawler.class);
 	
@@ -34,8 +31,7 @@ public class TeknosaCrawler extends ProductCrawler {
 	
 	@Inject
 	public TeknosaCrawler(IProductService service) {
-		super();
-		_service = service;
+		super(service);
 	}
 
 	@Override
@@ -50,7 +46,7 @@ public class TeknosaCrawler extends ProductCrawler {
 		}
 		
 		// Eldeki ürünleri sisteme veriyoruz.
-		_service.takeProduct(products.toArray(new Product[products.size()]));
+		handOver(products.toArray(new Product[products.size()]));
 		
 		super.visit(page);
 	}
