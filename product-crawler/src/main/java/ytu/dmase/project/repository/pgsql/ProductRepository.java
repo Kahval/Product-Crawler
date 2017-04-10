@@ -6,6 +6,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.google.inject.Inject;
 
 import ytu.dmase.project.model.product.Category;
@@ -13,6 +16,8 @@ import ytu.dmase.project.model.product.Product;
 import ytu.dmase.project.repository.IProductRepository;
 
 public class ProductRepository implements IProductRepository {
+	
+	private final static Logger _logger = LoggerFactory.getLogger(ProductRepository.class);
 	
 	private Connection _conn;
 	
@@ -28,6 +33,7 @@ public class ProductRepository implements IProductRepository {
 	public ProductRepository(Connection connection)
 	{
 		_conn = connection;
+		setupDatabase();
 		
 		try {
 			
@@ -48,34 +54,20 @@ public class ProductRepository implements IProductRepository {
 
 	public Product GetById(UUID uuid) {
 		
-		Product product;
-
 		try {
-			_getById.setObject(0, uuid);
-			ResultSet results = _getById.executeQuery();
+			_getById.setObject(1, uuid);
+			ResultSet rs = _getById.executeQuery();
 			
-			if(results.next())
-			{
-				product = MapResultToProduct(results);		
-				return product;		
-			}
+			if(rs.next())
+				return readSingle(rs);			
+			else
+				return null;
+			
 		} catch (SQLException e) {
-			
-			String error = e.getSQLState();
-			
-			// Table exists ?
-			if(error.equals("42P01"))
-			{
-				createTable();
-			}
-				
-		} catch (MalformedURLException e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+
+			_logger.error("An error occured while finding products by uuid.", e);
+			return null;
 		}
-		
-		return null;
 	}
 
 	public Product GetById(String uuid) {
@@ -84,27 +76,16 @@ public class ProductRepository implements IProductRepository {
 
 	public Iterable<Product> FindByCategory(Category category) {
 		
-		ArrayList<Product> products = new ArrayList<Product>();
-		
 		try {
 			_findByCategory.setString(0, category.toString());
-			ResultSet results = _findByCategory.executeQuery();
+			ResultSet result = _findByCategory.executeQuery();
+			return readMultiple(result);
 			
-			while(results.next())
-			{
-				Product product = MapResultToProduct(results);
-				products.add(product);
-			}
+		} catch (SQLException e) {
 			
-			return products;
-			
-		} catch (Exception e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+			_logger.error("An error occured while finding products by category.", e);
+			return new ArrayList<Product>();
 		}
-		
-		return null;
 	}
 
 	public Iterable<Product> FindByKeywords(String... keywords) {
@@ -114,31 +95,18 @@ public class ProductRepository implements IProductRepository {
 
 	public Iterable<Product> FindByName(String productName) {
 		
-		ArrayList<Product> products = new ArrayList<Product>();
-		
 		try {
-			_findByName.setString(0, productName);
-			ResultSet results = _findByName.executeQuery();
-			
-			while(results.next())
-			{
-				Product product = MapResultToProduct(results);
-				products.add(product);
-			}
-			
-			return products;
+			_findByName.setString(1, productName);
+			return readMultiple(_findByName.executeQuery());
 			
 		} catch (Exception e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+			
+			_logger.error("An error occured while finding products by name.", e);
+			return new ArrayList<Product>();
 		}
-		
-		return products;
 	}
 
 	public void Save(Product product) {
-		
 		
 		try {
 			PreparedStatement statement = _save;
@@ -154,9 +122,8 @@ public class ProductRepository implements IProductRepository {
 			statement.execute();
 			
 		} catch (SQLException e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+			
+			_logger.error("An error occured while saving a product to repository.", e);
 		}
 	}
 
@@ -176,9 +143,8 @@ public class ProductRepository implements IProductRepository {
 			statement.execute();
 			
 		} catch (SQLException e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+
+			_logger.error("An error occured while updating a product's information.", e);
 		}
 	}
 
@@ -189,9 +155,8 @@ public class ProductRepository implements IProductRepository {
 			_delete.execute();
 			
 		} catch (SQLException e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+
+			_logger.error("An error occured while deleting a product from repository.", e);
 		}
 	}
 	
@@ -204,24 +169,21 @@ public class ProductRepository implements IProductRepository {
 		
 		try {
 			_getByUrl.setString(1, urlString);
-			ResultSet results = _getByUrl.executeQuery();
-			
-			if(results.next())
-			{
-				Product product = MapResultToProduct(results);
-				return product;
-			}
+			ResultSet rs = _getByUrl.executeQuery();
+			if(rs.next())
+				return readSingle(rs);
+			else
+				return null;
 			
 		} catch (Exception e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
+			
+			_logger.error("An error occured while finding products by url.", e);
+			return null;
 		}
 		
-		return null;
 	}
 	
-	private Product MapResultToProduct(ResultSet result) throws SQLException, MalformedURLException
+	private Product readSingle(ResultSet result) throws SQLException
 	{
 		String uuidString = result.getString("uuid");
 		UUID uuid = UUID.fromString(uuidString);
@@ -232,7 +194,14 @@ public class ProductRepository implements IProductRepository {
 		Double price = result.getDouble("price");
 		String ctg   = result.getString("category");
 		String urlString = result.getString("url");
-		URL url = new URL(urlString);
+		
+		URL url;
+		try {
+			url = new URL(urlString);
+		} catch (MalformedURLException e) {
+			_logger.error("Error when parsing url from result set", e);
+			return null;
+		}
 		
 		Product product = new Product(uuid, name, url);
 		product.set_brand(brand);
@@ -244,8 +213,89 @@ public class ProductRepository implements IProductRepository {
 		return product;
 	}
 	
-	private void createTable()
+	protected Iterable<Product> readMultiple(ResultSet result) throws SQLException
 	{
+		ArrayList<Product> products = new ArrayList<Product>();
+		while(result.next())
+		{
+			products.add(readSingle(result));
+		}
 		
+		return products;
+	}
+	
+	private void setupDatabase()
+	{
+		try {
+			PreparedStatement statement = _conn.prepareStatement(
+					"SELECT * FROM information_schema.tables WHERE table_name=?");
+			
+			statement.setString(1, "product");
+			if(!statement.executeQuery().next())
+			{
+				_logger.info("product table couldn't found. Creating table...");
+				createProductTable();
+			}
+			
+			statement.setString(1, "price_history");
+			if(!statement.executeQuery().next())
+			{
+				_logger.info("price_history table couldn't found. Creating table...");
+				createPriceHistoryTable();
+			}
+			
+		} catch (SQLException e) {
+			
+			_logger.error("An error occured while setting up the repository database.", e);
+		}
+	}
+	
+	private void createProductTable()
+	{
+		String sql = "CREATE TABLE public.product "
+				+ "("
+					+ "uuid UUID PRIMARY KEY NOT NULL, "
+					+ "name TEXT NOT NULL, "
+					+ "brand TEXT, "
+					+ "model TEXT, "
+					+ "description TEXT, "
+					+ "price REAL, "
+					+ "category TEXT, "
+					+ "url TEXT NOT NULL, "
+					+ "update_date TIMESTAMP DEFAULT now() NOT NULL "
+				+ "); "
+				+ "CREATE UNIQUE INDEX product_pkey ON public.product (uuid); "
+				+ "CREATE UNIQUE INDEX product_url_key ON public.product (url);";
+		
+		try {
+			_conn.createStatement().execute(sql);
+		} catch (SQLException e) {
+
+			_logger.error("An error occred while creating the product table", e);
+		}
+		
+		_logger.info("table 'product' has been created.");
+	}
+	
+	private void createPriceHistoryTable()
+	{
+		String sql = "CREATE TABLE public.price_history "
+				+ "( "
+					+ "uuid UUID NOT NULL, "
+					+ "price REAL, "
+					+ "date TIMESTAMP DEFAULT now(), "
+					+ "CONSTRAINT price_history_uuid_fkey FOREIGN KEY (uuid) "
+					+ "REFERENCES product (uuid) ON DELETE CASCADE ON UPDATE CASCADE "
+				+ "); "
+				+ "CREATE UNIQUE INDEX price_history_uuid_date_pk ON public.price_history (uuid, date);";
+		
+		try {
+			_conn.createStatement().execute(sql);
+		} catch (SQLException e) {
+			
+			_logger.error("An error occred while creating the price_history table", e);
+		}
+		
+		_logger.info("table 'price_history' has been created.'");
 	}
 }
