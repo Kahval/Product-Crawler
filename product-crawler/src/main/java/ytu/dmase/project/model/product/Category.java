@@ -25,6 +25,7 @@ public class Category {
 	public final static Category health = new Category("Beauty, Health");
 	public final static Category tools = new Category("Tools");
 	public final static Category other = new Category("Other");
+	public final static Category unassigned = new Category("Unassigned");
 	
 	public static Category fromName(String name)
 	{
