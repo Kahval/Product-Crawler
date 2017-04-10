@@ -4,7 +4,12 @@ import java.awt.Image;
 import java.net.URL;
 import java.util.UUID;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Product {
+	
+	private final static Logger _logger = LoggerFactory.getLogger(Product.class);
 	
 	private UUID _uuid;
 	private URL _url;
@@ -66,6 +71,11 @@ public class Product {
 	}
 
 	public void set_category(Category category) {
+		if(category == null)
+		{
+			_logger.warn("Tried to set to a null category. Using category 'other' instead");
+			category = Category.other;
+		}
 		this._category = category;
 	}
 
