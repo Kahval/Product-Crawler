@@ -244,6 +244,14 @@ public class ProductRepository implements IProductRepository {
 				createPriceHistoryTable();
 			}
 			
+			statement.executeQuery("SELECT * FROM information_schema.triggers WHERE trigger_name=?");
+			statement.setString(1, "record_price_history");
+			if(!statement.executeQuery().next())
+			{
+				_logger.info("Database trigger 'record_price_history' couldn't found. Creating trigger...");
+				createTriggers();
+			}
+			
 		} catch (SQLException e) {
 			
 			_logger.error("An error occured while setting up the repository database.", e);
@@ -297,5 +305,28 @@ public class ProductRepository implements IProductRepository {
 		}
 		
 		_logger.info("table 'price_history' has been created.'");
+	}
+	
+	private void createTriggers()
+	{
+		String sql = "CREATE OR REPLACE FUNCTION record_price_history() RETURNS TRIGGER "
+				+ "LANGUAGE plpgsql AS $$ "
+				+ "BEGIN "
+					+ "IF NEW.price <> OLD.price THEN "
+						+ "INSERT INTO price_history (uuid, price, date) VALUES (OLD.uuid, OLD.price, OLD.update_date); "
+					+ "END IF; "
+					+ "NEW.update_date = CURRENT_DATE; "
+					+ "RETURN NEW; "
+				+ "END; "
+				+ "$$;";
+		
+		try {
+			_conn.createStatement().execute(sql);
+		} catch (SQLException e) {
+			
+			_logger.error("An error occred while creating the record_price_history trigger", e);
+		}
+		
+		_logger.info("trigger 'record_price_history' has been created.'");
 	}
 }
