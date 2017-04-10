@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
+<configuration scan="true" scanPeriod="30 seconds">
  
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-    	<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{18} - %msg%n</pattern>
+    	<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %marker %logger{18} - %msg%n</pattern>
+    </encoder>
+  </appender>
+   
+   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>crawler.log</file>
+    <append>true</append>
+    <!-- set immediateFlush to false for much higher logging throughput -->
+    <immediateFlush>true</immediateFlush>
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern>%-4relative [%thread] %-5level %marker %logger{35} - %msg%n</pattern>
     </encoder>
   </appender>
    
@@ -12,5 +24,6 @@
  
   <root level="info">
     <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
   </root>
 </configuration>
