@@ -2,6 +2,7 @@ package ytu.dmase.project.model.product;
 
 import java.awt.Image;
 import java.net.URL;
+import java.util.Date;
 import java.util.UUID;
 
 public class Product {
@@ -14,6 +15,7 @@ public class Product {
 	private String _description = "";
 	private double _price = -1;
 	private Category _category = Category.other;
+	private Date _updateDate;
 	private Image _image;
 	
 	public Product(String productName, URL url)
@@ -27,6 +29,7 @@ public class Product {
 		}
 		
 		_url = url;
+		_updateDate = new Date();
 	}
 	
 	public Product(UUID uuid, String productName, URL url)
@@ -127,5 +130,13 @@ public class Product {
 	public void set_image(Image _image) {
 		
 		this._image = _image;
+	}
+
+	public Date get_updateDate() {
+		return _updateDate;
+	}
+
+	public void set_updateDate(Date _updateDate) {
+		this._updateDate = _updateDate;
 	}
 }

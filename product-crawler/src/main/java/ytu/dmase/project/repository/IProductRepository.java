@@ -7,15 +7,16 @@ import ytu.dmase.project.model.product.*;
 
 public interface IProductRepository {
 	
-	Product GetById(UUID uuid);
-	Product GetById(String uuidString);
-	Product GetByUrl(URL url);
-	Product GetByUrl(String urlString);
-	Iterable<Product> FindByCategory(Category category);
-	Iterable<Product> FindByKeywords(String...keywords);
-	Iterable<Product> FindByName(String productName);
+	Product getById(UUID uuid) throws RepositoryException;
+	Product getById(String uuidString) throws RepositoryException;
+	Product getByUrl(URL url) throws RepositoryException;
+	Product getByUrl(String urlString) throws RepositoryException;
+	Iterable<Product> findByCategory(Category category) throws RepositoryException;
+	Iterable<Product> findByKeywords(String...keywords) throws RepositoryException;
+	Iterable<Product> findByName(String productName) throws RepositoryException;
 	
-	void Save(Product product);
-	void Update(Product product);
-	void Delete(Product product);
+	void save(Product product) throws RepositoryException;
+	void update(Product product) throws RepositoryException;
+	void delete(Product product) throws RepositoryException;
+	int count() throws RepositoryException;
 }
