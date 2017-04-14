@@ -1,9 +1,15 @@
 package ytu.dmase.project.ioc.modules;
 
+import java.io.IOException;
 import java.io.InputStream;
-import java.sql.*;
 import java.util.Properties;
 
+import javax.sql.DataSource;
+
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.apache.sis.internal.jdk7.Objects;
+import org.apache.tika.io.IOUtils;
+import org.flywaydb.core.Flyway;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,53 +23,57 @@ public class RepositoryModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		
-	    bind(Connection.class).toProvider(ConnectionProvider.class);
+		Flyway flyway = new Flyway();
+		flyway.setDataSource(new DataSourceProvider().get());
+		//flyway.setBaselineOnMigrate(true);
+		flyway.migrate();
+		
+	    bind(DataSource.class).toProvider(DataSourceProvider.class);
 		bind(IProductRepository.class).to(ytu.dmase.project.repository.pgsql.ProductRepository.class);
 		//bind(IProductRepository.class).to(ytu.dmase.project.repository.memory.ProductRepository.class);
 	}
 }
 
-class ConnectionProvider implements Provider<Connection>
+class DataSourceProvider implements Provider<DataSource>
 {
-	private static final Logger _logger = LoggerFactory.getLogger(ConnectionProvider.class);
+	private static final Logger _logger = LoggerFactory.getLogger(DataSourceProvider.class);
+	
+	private String _dbconfig = "/database-config.properties";
 	
 	@Override
-	public Connection get() {
+	public DataSource get() {
 		
 		Properties prop = new Properties();
 		
-		try
-		{
-			Class.forName("org.postgresql.Driver");
-			//InputStream is = new FileInputStream("database-config.properties");
-			InputStream is = RepositoryModule.class.getResourceAsStream("/database-config.properties");
+		InputStream is = RepositoryModule.class.getResourceAsStream(_dbconfig);
+		
+		try {
 			prop.load(is);
-			
-			String host = prop.getProperty("host", "127.0.0.1");
-			String port = prop.getProperty("port", "5432");
-			String db = prop.getProperty("database");
-			String user = prop.getProperty("user", "postgres");
-			String password = prop.getProperty("password");
-			
-			String connectionString = String.format("jdbc:postgresql://%s:%s/%s",
-					host, port, db);
-			
-			Connection connection = DriverManager.getConnection(connectionString,
-					user, password);
-			
-			is.close();
-			
-			return connection;
-		} 
-		catch (Exception e)
-		{
-			_logger.error(e.getMessage());
-			e.printStackTrace();
-			System.err.println(e.getClass().getName()+": "+e.getMessage());
-			System.exit(0);
+		} catch (IOException e) {
+			_logger.error("Couldn't load database config file. '%s'", _dbconfig);
+			return null;
+		} finally {
+			IOUtils.closeQuietly(is);
 		}
-
-		return null; // to remove ide warning.
+		
+		String driverName = prop.getProperty("driver");
+		Objects.requireNonNull("In database config file, there is no 'driver' parameter.");
+		
+		String username = prop.getProperty("user");
+		Objects.requireNonNull("In database config file, there is no 'user' parameter.");
+		
+		String password = prop.getProperty("password");
+		Objects.requireNonNull("In database config file, there is no 'password' parameter.");
+		
+		String url = prop.getProperty("url");
+		Objects.requireNonNull("In database config file, there is no 'url' parameter.");
+		
+		BasicDataSource ds = new BasicDataSource();
+		ds.setDriverClassName(driverName);
+		ds.setUrl(url);
+		ds.setUsername(username);
+		ds.setPassword(password);
+		
+		return ds;
 	}
-	
 }
