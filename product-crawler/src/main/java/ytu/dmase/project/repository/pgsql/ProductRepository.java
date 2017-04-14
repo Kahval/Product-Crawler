@@ -1,24 +1,30 @@
 package ytu.dmase.project.repository.pgsql;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.UUID;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import javax.sql.DataSource;
+
+import java.util.Objects;
+
+import org.apache.commons.io.IOUtils;
 
 import com.google.inject.Inject;
 
 import ytu.dmase.project.model.product.Category;
 import ytu.dmase.project.model.product.Product;
 import ytu.dmase.project.repository.IProductRepository;
+import ytu.dmase.project.repository.RepositoryException;
 
 public class ProductRepository implements IProductRepository {
 	
-	private final static Logger _logger = LoggerFactory.getLogger(ProductRepository.class);
-	
+	private DataSource _ds;
 	private Connection _conn;
 	
 	private PreparedStatement _getById;
@@ -28,31 +34,29 @@ public class ProductRepository implements IProductRepository {
 	private PreparedStatement _update;
 	private PreparedStatement _delete;
 	private PreparedStatement _getByUrl;
+	private PreparedStatement _count;
 	
 	@Inject
-	public ProductRepository(Connection connection)
+	public ProductRepository(DataSource ds) throws SQLException
 	{
-		_conn = connection;
-		setupDatabase();
+		Objects.requireNonNull(ds);
+		_ds = ds;
+		_conn = _ds.getConnection();
 		
-		try {
-			
-			_getById 		= _conn.prepareStatement("SELECT * FROM product WHERE uuid=?");
-			_findByCategory = _conn.prepareStatement("SELECT * FROM product WHERE category=?");
-			_findByName		= _conn.prepareStatement("SELECT * FROM product WHERE name=?");
-			_getByUrl 		= _conn.prepareStatement("SELECT * FROM product WHERE url=?");
-			_save 			= _conn.prepareStatement("INSERT INTO product (uuid, name, brand, model, description, price, category, url) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-			_update 		= _conn.prepareStatement("UPDATE product SET name=?, brand=?, model=?, description=?, price=?, category=?, url=? WHERE uuid=?");
-			_delete 		= _conn.prepareStatement("DELETE FROM product WHERE uuid=?");
-			
-		} catch (SQLException e) {
-	         e.printStackTrace();
-	         System.err.println(e.getClass().getName()+": "+e.getMessage());
-	         System.exit(0);
-		}
+		_getById 		= _conn.prepareStatement("SELECT * FROM product WHERE uuid=?");
+		_findByCategory = _conn.prepareStatement("SELECT * FROM product WHERE category=?");
+		_findByName		= _conn.prepareStatement("SELECT * FROM product WHERE name=?");
+		_getByUrl 		= _conn.prepareStatement("SELECT * FROM product WHERE url=?");
+		_save 			= _conn.prepareStatement("INSERT INTO product (uuid, name, brand, model, description, price, category, url, update_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		_update 		= _conn.prepareStatement("UPDATE product SET name=?, brand=?, model=?, description=?, price=?, category=?, url=?, update_time=? WHERE uuid=?");
+		_delete 		= _conn.prepareStatement("DELETE FROM product WHERE uuid=?");
+		_count			= _conn.prepareStatement("SELECT count(uuid) FROM product");
+
 	}
 
-	public Product GetById(UUID uuid) {
+	public Product getById(UUID uuid) throws RepositoryException {
+		
+		Objects.requireNonNull(uuid, "uuid can't be null.");
 		
 		try {
 			_getById.setObject(1, uuid);
@@ -65,16 +69,17 @@ public class ProductRepository implements IProductRepository {
 			
 		} catch (SQLException e) {
 
-			_logger.error("An error occured while finding products by uuid.", e);
-			return null;
+			throw new RepositoryException("An error occured while finding products by uuid.", e);
 		}
 	}
 
-	public Product GetById(String uuid) {
-		return GetById(UUID.fromString(uuid));
+	public Product getById(String uuid) throws RepositoryException {
+		return getById(UUID.fromString(uuid));
 	}
 
-	public Iterable<Product> FindByCategory(Category category) {
+	public Iterable<Product> findByCategory(Category category) throws RepositoryException {
+		
+		Objects.requireNonNull(category, "category can't be null.");
 		
 		try {
 			_findByCategory.setString(0, category.toString());
@@ -83,17 +88,18 @@ public class ProductRepository implements IProductRepository {
 			
 		} catch (SQLException e) {
 			
-			_logger.error("An error occured while finding products by category.", e);
-			return new ArrayList<Product>();
+			throw new RepositoryException("An error occured while finding products by category.", e);
 		}
 	}
 
-	public Iterable<Product> FindByKeywords(String... keywords) {
+	public Iterable<Product> findByKeywords(String... keywords) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Iterable<Product> FindByName(String productName) {
+	public Iterable<Product> findByName(String productName) throws RepositoryException {
+		
+		Objects.requireNonNull(productName, "productName can't be null.");
 		
 		try {
 			_findByName.setString(1, productName);
@@ -101,12 +107,13 @@ public class ProductRepository implements IProductRepository {
 			
 		} catch (Exception e) {
 			
-			_logger.error("An error occured while finding products by name.", e);
-			return new ArrayList<Product>();
+			throw new RepositoryException("An error occured while finding products by name.", e);
 		}
 	}
 
-	public void Save(Product product) {
+	public void save(Product product) throws RepositoryException {
+		
+		Objects.requireNonNull(product, "product can't be null.");
 		
 		try {
 			PreparedStatement statement = _save;
@@ -118,16 +125,18 @@ public class ProductRepository implements IProductRepository {
 			statement.setDouble(6, product.get_price());
 			statement.setString(7, product.get_category().toString());
 			statement.setString(8, product.get_url().toString());
-
+			statement.setTimestamp(9, new Timestamp(product.get_updateDate().getTime()));
 			statement.execute();
 			
 		} catch (SQLException e) {
 			
-			_logger.error("An error occured while saving a product to repository.", e);
+			throw new RepositoryException("An error occured while saving a product to repository.", e);
 		}
 	}
 
-	public void Update(Product product) {
+	public void update(Product product) throws RepositoryException {
+		
+		Objects.requireNonNull(product, "product can't be null.");
 		
 		try {
 			PreparedStatement statement = _update;
@@ -138,17 +147,20 @@ public class ProductRepository implements IProductRepository {
 			statement.setDouble(5, product.get_price());
 			statement.setString(6, product.get_category().toString());
 			statement.setString(7, product.get_url().toString());
-			statement.setObject(8, product.get_uuid());
+			statement.setTimestamp(8, new Timestamp(product.get_updateDate().getTime()));
+			statement.setObject(9, product.get_uuid());
 
 			statement.execute();
 			
 		} catch (SQLException e) {
 
-			_logger.error("An error occured while updating a product's information.", e);
+			throw new RepositoryException("An error occured while updating a product's information.", e);
 		}
 	}
 
-	public void Delete(Product product) {
+	public void delete(Product product) throws RepositoryException {
+		
+		Objects.requireNonNull(product, "product can't be null.");
 		
 		try {
 			_delete.setObject(1, product.get_uuid());
@@ -156,16 +168,20 @@ public class ProductRepository implements IProductRepository {
 			
 		} catch (SQLException e) {
 
-			_logger.error("An error occured while deleting a product from repository.", e);
+			throw new RepositoryException("An error occured while deleting a product from repository.", e);
 		}
 	}
 	
-	public Product GetByUrl(URL url) {
+	public Product getByUrl(URL url) throws RepositoryException {
 
-		return GetByUrl(url.toString());
+		Objects.requireNonNull(url, "url can't be null.");
+		
+		return getByUrl(url.toString());
 	}
 
-	public Product GetByUrl(String urlString) {
+	public Product getByUrl(String urlString) throws RepositoryException {
+		
+		Objects.requireNonNull(urlString, "urlString can't be null.");
 		
 		try {
 			_getByUrl.setString(1, urlString);
@@ -175,15 +191,28 @@ public class ProductRepository implements IProductRepository {
 			else
 				return null;
 			
-		} catch (Exception e) {
+		} catch (SQLException e) {
 			
-			_logger.error("An error occured while finding products by url.", e);
-			return null;
+			throw new RepositoryException("An error occured while finding products by url.", e);
 		}
 		
 	}
 	
-	private Product readSingle(ResultSet result) throws SQLException
+	public int count() throws RepositoryException {
+		
+		try {
+			ResultSet rs = _count.executeQuery();
+
+			rs.next();
+			return rs.getInt("count");
+			
+		} catch (SQLException e) {
+			
+			throw new RepositoryException("Error when getting count of products", e);	
+		}
+	}
+	
+	private Product readSingle(ResultSet result) throws SQLException, RepositoryException
 	{
 		String uuidString = result.getString("uuid");
 		UUID uuid = UUID.fromString(uuidString);
@@ -194,13 +223,14 @@ public class ProductRepository implements IProductRepository {
 		Double price = result.getDouble("price");
 		String ctg   = result.getString("category");
 		String urlString = result.getString("url");
+		Timestamp timestamp = result.getTimestamp("update_time");
 		
 		URL url;
 		try {
 			url = new URL(urlString);
 		} catch (MalformedURLException e) {
-			_logger.error("Error when parsing url from result set", e);
-			return null;
+			
+			throw new RepositoryException("Error when parsing url from result set", e);
 		}
 		
 		Product product = new Product(uuid, name, url);
@@ -209,11 +239,12 @@ public class ProductRepository implements IProductRepository {
 		product.set_description(desc);
 		product.set_price(price);
 		product.set_category(Category.fromName(ctg));
+		product.set_updateDate(new Date(timestamp.getTime()));
 		
 		return product;
 	}
 	
-	protected Iterable<Product> readMultiple(ResultSet result) throws SQLException
+	protected Iterable<Product> readMultiple(ResultSet result) throws SQLException, RepositoryException
 	{
 		ArrayList<Product> products = new ArrayList<Product>();
 		while(result.next())
@@ -224,109 +255,21 @@ public class ProductRepository implements IProductRepository {
 		return products;
 	}
 	
-	private void setupDatabase()
+	protected void setupDatabase() throws SQLException, IOException
 	{
+		InputStream is = getClass().getResourceAsStream("postgresql-ddl.txt");
+		String ddlScript = IOUtils.toString(is, Charset.forName("utf-8"));
+		
 		try {
-			PreparedStatement statement = _conn.prepareStatement(
-					"SELECT * FROM information_schema.tables WHERE table_name=?");
+			_conn.setAutoCommit(false);
 			
-			statement.setString(1, "product");
-			if(!statement.executeQuery().next())
-			{
-				_logger.info("product table couldn't found. Creating table...");
-				createProductTable();
-			}
-			
-			statement.setString(1, "price_history");
-			if(!statement.executeQuery().next())
-			{
-				_logger.info("price_history table couldn't found. Creating table...");
-				createPriceHistoryTable();
-			}
-			
-			statement.executeQuery("SELECT * FROM information_schema.triggers WHERE trigger_name=?");
-			statement.setString(1, "record_price_history");
-			if(!statement.executeQuery().next())
-			{
-				_logger.info("Database trigger 'record_price_history' couldn't found. Creating trigger...");
-				createTriggers();
-			}
+			PreparedStatement statement = _conn.prepareStatement(ddlScript);
+			statement.execute();
 			
 		} catch (SQLException e) {
 			
-			_logger.error("An error occured while setting up the repository database.", e);
+			_conn.rollback();
+			_conn.setAutoCommit(false);
 		}
-	}
-	
-	private void createProductTable()
-	{
-		String sql = "CREATE TABLE public.product "
-				+ "("
-					+ "uuid UUID PRIMARY KEY NOT NULL, "
-					+ "name TEXT NOT NULL, "
-					+ "brand TEXT, "
-					+ "model TEXT, "
-					+ "description TEXT, "
-					+ "price REAL, "
-					+ "category TEXT, "
-					+ "url TEXT NOT NULL, "
-					+ "update_date TIMESTAMP DEFAULT now() NOT NULL "
-				+ "); "
-				+ "CREATE UNIQUE INDEX product_pkey ON public.product (uuid); "
-				+ "CREATE UNIQUE INDEX product_url_key ON public.product (url);";
-		
-		try {
-			_conn.createStatement().execute(sql);
-		} catch (SQLException e) {
-
-			_logger.error("An error occred while creating the product table", e);
-		}
-		
-		_logger.info("table 'product' has been created.");
-	}
-	
-	private void createPriceHistoryTable()
-	{
-		String sql = "CREATE TABLE public.price_history "
-				+ "( "
-					+ "uuid UUID NOT NULL, "
-					+ "price REAL, "
-					+ "date TIMESTAMP DEFAULT now(), "
-					+ "CONSTRAINT price_history_uuid_fkey FOREIGN KEY (uuid) "
-					+ "REFERENCES product (uuid) ON DELETE CASCADE ON UPDATE CASCADE "
-				+ "); "
-				+ "CREATE UNIQUE INDEX price_history_uuid_date_pk ON public.price_history (uuid, date);";
-		
-		try {
-			_conn.createStatement().execute(sql);
-		} catch (SQLException e) {
-			
-			_logger.error("An error occred while creating the price_history table", e);
-		}
-		
-		_logger.info("table 'price_history' has been created.'");
-	}
-	
-	private void createTriggers()
-	{
-		String sql = "CREATE OR REPLACE FUNCTION record_price_history() RETURNS TRIGGER "
-				+ "LANGUAGE plpgsql AS $$ "
-				+ "BEGIN "
-					+ "IF NEW.price <> OLD.price THEN "
-						+ "INSERT INTO price_history (uuid, price, date) VALUES (OLD.uuid, OLD.price, OLD.update_date); "
-					+ "END IF; "
-					+ "NEW.update_date = CURRENT_DATE; "
-					+ "RETURN NEW; "
-				+ "END; "
-				+ "$$;";
-		
-		try {
-			_conn.createStatement().execute(sql);
-		} catch (SQLException e) {
-			
-			_logger.error("An error occred while creating the record_price_history trigger", e);
-		}
-		
-		_logger.info("trigger 'record_price_history' has been created.'");
 	}
 }

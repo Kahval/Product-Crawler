@@ -14,22 +14,22 @@ public class ProductRepository implements IProductRepository {
 
 	private HashMap<UUID, Product> _products = new HashMap<UUID, Product>();
 	
-	public Product GetById(UUID uuid) {
+	public Product getById(UUID uuid) {
 		return _products.get(uuid);
 	}
 
-	public Product GetById(String uuidString) {
+	public Product getById(String uuidString) {
 		UUID uuid = UUID.fromString(uuidString);
-		return GetById(uuid);
+		return getById(uuid);
 	}
 
-	public Iterable<Product> FindByCategory(Category category) {
+	public Iterable<Product> findByCategory(Category category) {
 
 		ArrayList<Product> products = new ArrayList<Product>();
 		
 		for(UUID uuid : _products.keySet())
 		{
-			Product product = GetById(uuid);
+			Product product = getById(uuid);
 			if(product.get_category().equals(category))
 			{
 				products.add(product);
@@ -44,13 +44,13 @@ public class ProductRepository implements IProductRepository {
 		return null;
 	}
 
-	public Iterable<Product> FindByName(String productName) {
+	public Iterable<Product> findByName(String productName) {
 
 		ArrayList<Product> products = new ArrayList<Product>();
 		
 		for(UUID uuid : _products.keySet())
 		{
-			Product product = GetById(uuid);
+			Product product = getById(uuid);
 			if(product.get_name().equals(productName))
 			{
 				products.add(product);
@@ -60,7 +60,7 @@ public class ProductRepository implements IProductRepository {
 		return products;
 	}
 
-	public void Save(Product product) {
+	public void save(Product product) {
 		
 		UUID uuid = product.get_uuid();
 		if(_products.containsKey(uuid))
@@ -69,12 +69,12 @@ public class ProductRepository implements IProductRepository {
 		}
 	}
 
-	public void Update(Product product) {
+	public void update(Product product) {
 		// TODO Auto-generated method stub
 		// no need.
 	}
 
-	public void Delete(Product product) {
+	public void delete(Product product) {
 
 		UUID uuid = product.get_uuid();
 		if(_products.containsKey(uuid))
@@ -83,11 +83,11 @@ public class ProductRepository implements IProductRepository {
 		}
 	}
 
-	public Product GetByUrl(URL url) {
+	public Product getByUrl(URL url) {
 		
 		for(UUID uuid : _products.keySet())
 		{
-			Product product = GetById(uuid);
+			Product product = getById(uuid);
 			if(product.get_url().equals(url))
 			{
 				return product;
@@ -97,10 +97,10 @@ public class ProductRepository implements IProductRepository {
 		return null;
 	}
 
-	public Product GetByUrl(String urlString) {
+	public Product getByUrl(String urlString) {
 		
 		try {
-			return GetByUrl(new URL(urlString));
+			return getByUrl(new URL(urlString));
 			
 		} catch (MalformedURLException e) {
 	         e.printStackTrace();
@@ -109,6 +109,17 @@ public class ProductRepository implements IProductRepository {
 		}
 		
 		return null;
+	}
+
+	@Override
+	public Iterable<Product> findByKeywords(String... keywords) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int count() {
+		return _products.size();
 	}
 
 }
