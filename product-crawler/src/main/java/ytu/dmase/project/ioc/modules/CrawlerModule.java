@@ -5,6 +5,7 @@ import com.google.inject.multibindings.Multibinder;
 
 import ytu.dmase.project.crawler.ProductCrawler;
 import ytu.dmase.project.crawler.TeknosaCrawler;
+import ytu.dmase.project.crawler.VatanBilgisayarCrawler;
 
 public class CrawlerModule extends AbstractModule {
 
@@ -16,7 +17,7 @@ public class CrawlerModule extends AbstractModule {
 		crawlerBinder.addBinding().to(TeknosaCrawler.class);
 		//crawlerBinder.addBinding().to(N11Crawler.class);
 		//crawlerBinder.addBinding().to(HepsiburadaCrawler.class);
-		//crawlerBinder.addBinding().to(VatanBilgisayarCrawler.class);
+		crawlerBinder.addBinding().to(VatanBilgisayarCrawler.class);
 		//crawlerBinder.addBinding().to(TekzenCrawler.class);
 		
 		//bind(CrawlerController.class).to(CrawlerController.class);
