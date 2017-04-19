@@ -13,7 +13,7 @@ import ytu.dmase.project.repository.RepositoryException;
 
 public class ProductService implements IProductService {
 
-	private final Logger _logger = LoggerFactory.getLogger(ProductService.class);
+	private static final Logger _logger = LoggerFactory.getLogger(ProductService.class);
 	
 	private IProductRepository _repo;
 	
