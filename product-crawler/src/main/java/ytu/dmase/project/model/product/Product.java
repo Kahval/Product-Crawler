@@ -14,7 +14,7 @@ public class Product {
 	private String _model = "";
 	private String _description = "";
 	private double _price = -1;
-	private Category _category = Category.other;
+	private Category _category = Category.unassigned;
 	private Date _updateDate;
 	private Image _image;
 	
