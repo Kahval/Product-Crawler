@@ -14,7 +14,10 @@ public class IoC {
 		_injector = Guice.createInjector(
 				new CrawlerModule(),
 				new RepositoryModule(),
-				new ServiceModule());
+				new ServiceModule(),
+				new ParserModule());
+		
+		
 	}
 
 	public Injector get_injector() {
