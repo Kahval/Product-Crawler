@@ -18,8 +18,11 @@ import org.jsoup.select.Elements;
 import ytu.dmase.project.model.product.Category;
 import ytu.dmase.project.model.product.Product;
 import ytu.dmase.project.model.webpage.WebPage;
+import ytu.dmase.project.utils.URLUtils;
 
 public class ParserTeknosa implements IProductParser {
+	
+	private URL _domainUrl = URLUtils.makeUrl("http://www.teknosa.com");
 	
 	// Used for getting the category fragment from the page url.
 	private final static Pattern _categoryPattern = Pattern.compile("((kategori)|(katalog))/(?<ctg>(\\w|-)*)");
@@ -141,5 +144,11 @@ public class ParserTeknosa implements IProductParser {
 		}
 		
 		return null;
+	}
+
+	@Override
+	public URL get_domain() {
+
+		return _domainUrl;
 	}
 }
