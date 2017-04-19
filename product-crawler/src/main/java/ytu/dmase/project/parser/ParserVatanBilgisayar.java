@@ -42,9 +42,6 @@ public class ParserVatanBilgisayar implements IProductParser {
 				throw new ProductParseException("Error when parsing product url.", e);
 			}
 			
-			// 'sales' classına sahip ama 'old-sales' classına sahip olmayan elementin yazısını oku.
-			// teknosa.com'da indirimden önceki fiyatı göstermek için eski fiyatı tutan
-			// html elementine 'sales' classı yanında 'old-sales' classı
 			String priceString 	= elem.select(".urunListe_satisFiyat").text();
 					
 			// Ürünün resmi 'img' elementiyle gösteriliyor.
