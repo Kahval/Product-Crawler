@@ -28,7 +28,7 @@ public class ParserVatanBilgisayar implements IProductParser {
 		Document doc = Jsoup.parse(webPage.get_html());
 		
 		// emosInfinite ems-inline
-		Elements productListElements = doc.select("ul.emosInfinite.ems-inline li.ems-prd");
+		Elements productListElements = doc.select("div.urnList div.ems-prd-list ul.emosInfinite.ems-inline li.ems-prd");
 		for (Element elem : productListElements) {
 
 			String productName 	= elem.select(".ems-prd-name").text();
