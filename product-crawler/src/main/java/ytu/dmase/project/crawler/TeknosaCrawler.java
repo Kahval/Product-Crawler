@@ -17,7 +17,6 @@ public class TeknosaCrawler extends ProductCrawler {
 	
 	private String _domain = "http://www.teknosa.com";
 	
-	// TODO: Ürünleri kategorilerine göre ayır.
 	// TODO: Ürün resimlerini de al.
 	
 	@Inject

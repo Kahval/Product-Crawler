@@ -1,7 +1,6 @@
 package ytu.dmase.project.ioc.modules;
 
 import com.google.inject.AbstractModule;
-import com.google.inject.Injector;
 import com.google.inject.Singleton;
 
 import ytu.dmase.project.service.IPageHandler;
