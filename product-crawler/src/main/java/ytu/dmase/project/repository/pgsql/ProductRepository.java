@@ -1,10 +1,7 @@
 package ytu.dmase.project.repository.pgsql;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -12,8 +9,6 @@ import java.util.UUID;
 import javax.sql.DataSource;
 
 import java.util.Objects;
-
-import org.apache.commons.io.IOUtils;
 
 import com.google.inject.Inject;
 
@@ -24,43 +19,38 @@ import ytu.dmase.project.repository.RepositoryException;
 
 public class ProductRepository implements IProductRepository {
 	
-	private DataSource _ds;
-	private Connection _conn;
+	protected DataSource _ds;
 	
-	private PreparedStatement _getById;
-	private PreparedStatement _findByCategory;
-	private PreparedStatement _findByName;
-	private PreparedStatement _save;
-	private PreparedStatement _update;
-	private PreparedStatement _delete;
-	private PreparedStatement _getByUrl;
-	private PreparedStatement _count;
+	protected static String _getById = "SELECT * FROM product WHERE uuid=?";
+	protected static String _getByCategory = "SELECT * FROM product WHERE category=?";
+	protected static String _findByName = "SELECT * FROM product WHERE name=?";
+	protected static String _save = "INSERT INTO product "
+			+ "(uuid, name, brand, model, description, price, category, url, update_time) "
+			+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+	protected static String _update = "UPDATE product SET name=?, brand=?, model=?, "
+			+ "description=?, price=?, category=?, url=?, update_time=? WHERE uuid=?";
+	protected static String _delete = "DELETE FROM product WHERE uuid=?";
+	protected static String _getByUrl = "SELECT * FROM product WHERE url=?";
+	protected static String _count = "SELECT count(uuid) FROM product";
+	
 	
 	@Inject
 	public ProductRepository(DataSource ds) throws SQLException
 	{
 		Objects.requireNonNull(ds);
 		_ds = ds;
-		_conn = _ds.getConnection();
-		
-		_getById 		= _conn.prepareStatement("SELECT * FROM product WHERE uuid=?");
-		_findByCategory = _conn.prepareStatement("SELECT * FROM product WHERE category=?");
-		_findByName		= _conn.prepareStatement("SELECT * FROM product WHERE name=?");
-		_getByUrl 		= _conn.prepareStatement("SELECT * FROM product WHERE url=?");
-		_save 			= _conn.prepareStatement("INSERT INTO product (uuid, name, brand, model, description, price, category, url, update_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-		_update 		= _conn.prepareStatement("UPDATE product SET name=?, brand=?, model=?, description=?, price=?, category=?, url=?, update_time=? WHERE uuid=?");
-		_delete 		= _conn.prepareStatement("DELETE FROM product WHERE uuid=?");
-		_count			= _conn.prepareStatement("SELECT count(uuid) FROM product");
-
 	}
 
 	public Product getById(UUID uuid) throws RepositoryException {
 		
 		Objects.requireNonNull(uuid, "uuid can't be null.");
+		Connection conn = null;
 		
 		try {
-			_getById.setObject(1, uuid);
-			ResultSet rs = _getById.executeQuery();
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_getById);
+			statement.setObject(1, uuid);
+			ResultSet rs = statement.executeQuery();
 			
 			if(rs.next())
 				return readSingle(rs);			
@@ -70,6 +60,9 @@ public class ProductRepository implements IProductRepository {
 		} catch (SQLException e) {
 
 			throw new RepositoryException("An error occured while finding products by uuid.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 
@@ -80,15 +73,20 @@ public class ProductRepository implements IProductRepository {
 	public Iterable<Product> findByCategory(Category category) throws RepositoryException {
 		
 		Objects.requireNonNull(category, "category can't be null.");
+		Connection conn = null;
 		
 		try {
-			_findByCategory.setString(0, category.toString());
-			ResultSet result = _findByCategory.executeQuery();
-			return readMultiple(result);
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_getByCategory);
+			statement.setString(0, category.toString());
+			return readMultiple(statement.executeQuery());
 			
 		} catch (SQLException e) {
 			
 			throw new RepositoryException("An error occured while finding products by category.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 
@@ -100,23 +98,31 @@ public class ProductRepository implements IProductRepository {
 	public Iterable<Product> findByName(String productName) throws RepositoryException {
 		
 		Objects.requireNonNull(productName, "productName can't be null.");
+		Connection conn = null;
 		
 		try {
-			_findByName.setString(1, productName);
-			return readMultiple(_findByName.executeQuery());
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_findByName);
+			statement.setString(1, productName);
+			return readMultiple(statement.executeQuery());
 			
 		} catch (Exception e) {
 			
 			throw new RepositoryException("An error occured while finding products by name.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 
 	public void save(Product product) throws RepositoryException {
 		
 		Objects.requireNonNull(product, "product can't be null.");
+		Connection conn = null;
 		
 		try {
-			PreparedStatement statement = _save;
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_save);;
 			statement.setObject(1, product.get_uuid());
 			statement.setString(2, product.get_name());
 			statement.setString(3, product.get_brand());
@@ -131,15 +137,20 @@ public class ProductRepository implements IProductRepository {
 		} catch (SQLException e) {
 			
 			throw new RepositoryException("An error occured while saving a product to repository.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 
 	public void update(Product product) throws RepositoryException {
 		
 		Objects.requireNonNull(product, "product can't be null.");
+		Connection conn = null;
 		
 		try {
-			PreparedStatement statement = _update;
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_update);
 			statement.setString(1, product.get_name());
 			statement.setString(2, product.get_brand());
 			statement.setString(3, product.get_model());
@@ -155,20 +166,29 @@ public class ProductRepository implements IProductRepository {
 		} catch (SQLException e) {
 
 			throw new RepositoryException("An error occured while updating a product's information.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 
 	public void delete(Product product) throws RepositoryException {
 		
 		Objects.requireNonNull(product, "product can't be null.");
+		Connection conn = null;
 		
 		try {
-			_delete.setObject(1, product.get_uuid());
-			_delete.execute();
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_delete);
+			statement.setObject(1, product.get_uuid());
+			statement.execute();
 			
 		} catch (SQLException e) {
 
 			throw new RepositoryException("An error occured while deleting a product from repository.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 	
@@ -182,10 +202,13 @@ public class ProductRepository implements IProductRepository {
 	public Product getByUrl(String urlString) throws RepositoryException {
 		
 		Objects.requireNonNull(urlString, "urlString can't be null.");
+		Connection conn = null;
 		
 		try {
-			_getByUrl.setString(1, urlString);
-			ResultSet rs = _getByUrl.executeQuery();
+			conn = _ds.getConnection();
+			PreparedStatement statement = conn.prepareStatement(_getByUrl);
+			statement.setString(1, urlString);
+			ResultSet rs = statement.executeQuery();
 			if(rs.next())
 				return readSingle(rs);
 			else
@@ -194,14 +217,21 @@ public class ProductRepository implements IProductRepository {
 		} catch (SQLException e) {
 			
 			throw new RepositoryException("An error occured while finding products by url.", e);
+		} finally
+		{
+			closeConnection(conn);
 		}
 		
 	}
 	
 	public int count() throws RepositoryException {
+
+		Connection conn = null;
 		
 		try {
-			ResultSet rs = _count.executeQuery();
+			conn = _ds.getConnection();
+			ResultSet rs = conn.createStatement()
+					.executeQuery(_count);
 
 			rs.next();
 			return rs.getInt("count");
@@ -209,10 +239,13 @@ public class ProductRepository implements IProductRepository {
 		} catch (SQLException e) {
 			
 			throw new RepositoryException("Error when getting count of products", e);	
+		} finally
+		{
+			closeConnection(conn);
 		}
 	}
 	
-	private Product readSingle(ResultSet result) throws SQLException, RepositoryException
+	protected Product readSingle(ResultSet result) throws SQLException, RepositoryException
 	{
 		String uuidString = result.getString("uuid");
 		UUID uuid = UUID.fromString(uuidString);
@@ -255,21 +288,16 @@ public class ProductRepository implements IProductRepository {
 		return products;
 	}
 	
-	protected void setupDatabase() throws SQLException, IOException
+	protected void closeConnection(Connection conn)
 	{
-		InputStream is = getClass().getResourceAsStream("postgresql-ddl.txt");
-		String ddlScript = IOUtils.toString(is, Charset.forName("utf-8"));
-		
-		try {
-			_conn.setAutoCommit(false);
-			
-			PreparedStatement statement = _conn.prepareStatement(ddlScript);
-			statement.execute();
-			
-		} catch (SQLException e) {
-			
-			_conn.rollback();
-			_conn.setAutoCommit(false);
+		try
+		{
+			if(conn != null)
+				conn.close();
+		} 
+		catch(SQLException e)
+		{
+			// do nothing
 		}
 	}
 }
