@@ -28,12 +28,17 @@ public class ParserVatanBilgisayar implements IProductParser {
 		Document doc = Jsoup.parse(webPage.get_html());
 		
 		// emosInfinite ems-inline
-		Elements productListElements = doc.select("ul.emosInfinite.ems-inline li.ems-prd.filter,li.ems-prc.selected");
+		Elements productListElements = doc.select("ul.emosInfinite.ems-inline li.ems-prd");
 		for (Element elem : productListElements) {
 
 			String productName 	= elem.select(".ems-prd-name").text();
 			
-			String urlString = webPage.get_url().toString() + elem.select(".ems-prd-name a").attr("href");
+			URL pageUrl = webPage.get_url();
+			
+			String urlString = String.format("%s://%s%s", 
+					pageUrl.getProtocol(), 
+					pageUrl.getHost().toString(),
+					elem.select(".ems-prd-name a").attr("href"));
 			URL url;
 			try {
 				url = new URL(urlString);
@@ -42,7 +47,8 @@ public class ParserVatanBilgisayar implements IProductParser {
 				throw new ProductParseException("Error when parsing product url.", e);
 			}
 			
-			String priceString 	= elem.select(".urunListe_satisFiyat").text();
+			String priceString 	= elem.select(".ems-prd-price .ems-prd-price-selling").text();
+			priceString = priceString.replace(".","");
 					
 			// Ürünün resmi 'img' elementiyle gösteriliyor.
 			// Bu elementin 'src' attribute'ü bize resmin adresini verir. 

@@ -25,7 +25,23 @@ public class ParserVatanBilgisayarTests {
 		ParserVatanBilgisayar parser = new ParserVatanBilgisayar();
 		Collection<Product> products = parser.parse(page);
 		
-		assertTrue(products.size() == 20);
+		assertTrue(products.size() == 23);
+	}
+	
+	@Test
+	public void testParse2() throws IOException, ProductParseException
+	{
+		WebPage page = WebPageUtils.createWebPageFromFile("/vatanbilgisayar_laptop.txt", 
+				URLUtils.makeUrl("http://www.vatanbilgisayar.com/notebook/"));
+		
+		ParserVatanBilgisayar parser = new ParserVatanBilgisayar();
+		Collection<Product> products = parser.parse(page);
+		
+		assertTrue(products.size() == 21);
+		
+		for (Product product : products) {
+			assertTrue(product.get_price() > 100);
+		}
 	}
 
 }
