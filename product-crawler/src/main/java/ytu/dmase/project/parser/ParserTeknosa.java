@@ -52,7 +52,7 @@ public class ParserTeknosa implements IProductParser {
 			// 'a' elementinin 'href' attribute'ını oku.
 			// 'a' html elementi sitelerde tıklanabilir link vermek için kullanılır.
 			// Tıklanınca gidilecek sayfanın adresi 'href' attribute içersindedir.
-			String urlString = webPage.get_url().toString() + elem.select("a").attr("href");
+			String urlString = _domainUrl + elem.select("a").attr("href");
 			URL url;
 			try {
 				url = new URL(urlString);
