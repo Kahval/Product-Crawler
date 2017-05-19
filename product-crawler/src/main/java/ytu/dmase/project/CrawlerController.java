@@ -24,6 +24,9 @@ public class CrawlerController {
 	private RobotstxtServer _robotstxtServer;
 	private PageFetcher _pageFetcher;
 	
+	// Number of crawlers per domain
+	private int _crawlerPerDomain = 5;
+	
 	@Inject
 	public CrawlerController(Set<ProductCrawler> crawlers) throws Exception
 	{
@@ -42,7 +45,7 @@ public class CrawlerController {
 			CrawlController controller = new CrawlController(_config, _pageFetcher, _robotstxtServer);
 			String domain = crawler.get_crawlerDomain();
 			controller.addSeed(domain);
-			controller.startNonBlocking(new CrawlerFactory(crawler), 1);
+			controller.startNonBlocking(new CrawlerFactory(crawler), _crawlerPerDomain);
 		}
 		
 		for(CrawlController controller : controllers)
