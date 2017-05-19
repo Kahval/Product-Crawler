@@ -7,7 +7,7 @@
     </encoder>
   </appender>
    
-   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
     <file>crawler.log</file>
     <append>true</append>
     <!-- set immediateFlush to false for much higher logging throughput -->
@@ -18,11 +18,25 @@
       <pattern>%-4relative [%thread] %-5level %marker %logger{35} - %msg%n</pattern>
     </encoder>
   </appender>
+  <appender name="FILE_PRODUCTSERVICE" class="ch.qos.logback.core.FileAppender">
+  	<file>productService.log</file>
+    <append>true</append>
+    <immediateFlush>true</immediateFlush>
+  	<encoder>
+      <pattern>[%thread] %-5level %marker - %msg%n</pattern>
+    </encoder>
+  </appender>
    
   <logger name="com.base22" level="TRACE"/>
-   
+  <logger name="edu.uci.ics.crawler4j.crawler.WebCrawler" level="info">
+  	<appender-ref ref="STDOUT"></appender-ref>
+  	<appender-ref ref="FILE"></appender-ref>
+  </logger>
+  <logger name="ytu.dmase.project.service.ProductService" level="debug">
+  	<appender-ref ref="FILE_PRODUCTSERVICE"></appender-ref>
+  </logger>
  
-  <root level="info">
+  <root level="trace">
     <appender-ref ref="STDOUT" />
     <appender-ref ref="FILE" />
   </root>

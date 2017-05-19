@@ -118,7 +118,7 @@ public class Product {
 	
 	@Override
 	public String toString() {
-		return String.format("Product name: %s\t Url: %s",
+		return String.format("Product name: %-64s Url: %s",
 				get_name(),
 				get_url());
 	}
