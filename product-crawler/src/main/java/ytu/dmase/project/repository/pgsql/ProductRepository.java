@@ -2,13 +2,18 @@ package ytu.dmase.project.repository.pgsql;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 import javax.sql.DataSource;
-
-import java.util.Objects;
 
 import com.google.inject.Inject;
 
@@ -70,7 +75,7 @@ public class ProductRepository implements IProductRepository {
 		return getById(UUID.fromString(uuid));
 	}
 
-	public Iterable<Product> findByCategory(Category category) throws RepositoryException {
+	public List<Product> findByCategory(Category category) throws RepositoryException {
 		
 		Objects.requireNonNull(category, "category can't be null.");
 		Connection conn = null;
@@ -90,12 +95,12 @@ public class ProductRepository implements IProductRepository {
 		}
 	}
 
-	public Iterable<Product> findByKeywords(String... keywords) {
+	public List<Product> findByKeywords(String... keywords) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Iterable<Product> findByName(String productName) throws RepositoryException {
+	public List<Product> findByName(String productName) throws RepositoryException {
 		
 		Objects.requireNonNull(productName, "productName can't be null.");
 		Connection conn = null;
@@ -277,7 +282,7 @@ public class ProductRepository implements IProductRepository {
 		return product;
 	}
 	
-	protected Iterable<Product> readMultiple(ResultSet result) throws SQLException, RepositoryException
+	protected List<Product> readMultiple(ResultSet result) throws SQLException, RepositoryException
 	{
 		ArrayList<Product> products = new ArrayList<Product>();
 		while(result.next())

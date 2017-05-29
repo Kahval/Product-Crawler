@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
 import ytu.dmase.project.model.product.Category;
@@ -23,7 +24,7 @@ public class ProductRepository implements IProductRepository {
 		return getById(uuid);
 	}
 
-	public Iterable<Product> findByCategory(Category category) {
+	public List<Product> findByCategory(Category category) {
 
 		ArrayList<Product> products = new ArrayList<Product>();
 		
@@ -44,7 +45,7 @@ public class ProductRepository implements IProductRepository {
 		return null;
 	}
 
-	public Iterable<Product> findByName(String productName) {
+	public List<Product> findByName(String productName) {
 
 		ArrayList<Product> products = new ArrayList<Product>();
 		
@@ -112,7 +113,7 @@ public class ProductRepository implements IProductRepository {
 	}
 
 	@Override
-	public Iterable<Product> findByKeywords(String... keywords) {
+	public List<Product> findByKeywords(String... keywords) {
 		// TODO Auto-generated method stub
 		return null;
 	}

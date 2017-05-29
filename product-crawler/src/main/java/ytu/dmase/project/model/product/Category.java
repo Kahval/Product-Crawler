@@ -45,6 +45,6 @@ public class Category {
 				return category;
 		}
 		
-		return null;
+		throw new IllegalArgumentException("Invalid category name.");
 	}
 }

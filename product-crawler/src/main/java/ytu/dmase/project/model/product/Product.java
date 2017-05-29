@@ -1,11 +1,18 @@
 package ytu.dmase.project.model.product;
 
 import java.awt.Image;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.Date;
 import java.util.UUID;
 
-public class Product {
+
+public class Product implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	private final PropertyChangeSupport _pcs = new PropertyChangeSupport(this);
 	
 	private UUID _uuid;
 	private URL _url;
@@ -42,25 +49,44 @@ public class Product {
 		return _name;
 	}
 
-	public void set_name(String name) {
-		if(name != null)
-			this._name = name;
+	public void set_name(String newName) {
+		
+		if(newName == null || newName.isEmpty())
+			throw new IllegalArgumentException("Invalid product name.");
+		
+		String oldName = _name;
+		_name = newName;
+		_pcs.firePropertyChange("name", oldName, newName);
 	}
 
 	public String get_description() {
 		return _description;
 	}
 
-	public void set_description(String description) {
-		this._description = description;
+	public void set_description(String newDescription) {
+		
+		if(newDescription == null)
+			newDescription = "";
+		
+		String oldDescription = _description;
+		this._description = newDescription;
+		_pcs.firePropertyChange("description", oldDescription, newDescription);
 	}
 
 	public double get_price() {
 		return _price;
 	}
 
-	public void set_price(double price) {
-		this._price = price;
+	public void set_price(double newPrice) {
+		
+		// Product price can only be -1 if non-positive
+		// -1 indicates that product's price is unavailable
+		if(newPrice < 0 && newPrice != -1)
+			throw new IllegalArgumentException("Invalid product price.");
+		
+		double oldPrice = _price;
+		_price = newPrice;
+		_pcs.firePropertyChange("price", oldPrice, newPrice);
 	}
 
 	public String get_brand() {
@@ -75,9 +101,11 @@ public class Product {
 		return _category;
 	}
 
-	public void set_category(Category category) {
-		if(category != null)
-			this._category = category;
+	public void set_category(Category newCategory) {
+		
+		Category oldCategory = _category;
+		_category = newCategory;
+		_pcs.firePropertyChange("category", oldCategory, newCategory);
 	}
 
 	public UUID get_uuid() {
@@ -93,14 +121,22 @@ public class Product {
 			this._url = url;
 	}
 
-	public void set_brand(String brand) {
-		if(brand != null)
-			this._brand = brand;
+	public void set_brand(String newBrand) {
+		if(newBrand == null)
+			newBrand = "";
+		
+		String oldBrand = _brand;
+		_brand = newBrand;
+		_pcs.firePropertyChange("brand", oldBrand, newBrand);
 	}
 
-	public void set_model(String model) {
-		if(model != null)
-			this._model = model;
+	public void set_model(String newModel) {
+		if(newModel == null)
+			newModel = "";
+		
+		String oldModel = _model;
+		_model = newModel;
+		_pcs.firePropertyChange("brand", oldModel, newModel);
 	}
 	
 	@Override
@@ -139,4 +175,14 @@ public class Product {
 	public void set_updateDate(Date _updateDate) {
 		this._updateDate = _updateDate;
 	}
+	
+	public void addPropertyChangeListener(PropertyChangeListener listener)
+	{
+		_pcs.addPropertyChangeListener(listener);
+	}
+	
+	public void removePropertyChangeListener(PropertyChangeListener listener) 
+	{
+        _pcs.removePropertyChangeListener(listener);
+    }
 }
